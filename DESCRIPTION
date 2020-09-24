@@ -1,0 +1,31 @@
+Package: GWAS.BAYES
+Type: Package
+Title: GWAS for Selfing Species
+Version: 0.99.0
+Author: Jake Williams
+Maintainer: Jake Williams <jwilliams@vt.edu>
+Description: This package is built to perform GWAS analysis for selfing species in R.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+biocViews: AssayDomain, SNP
+Depends: 
+  R (>= 4.0),
+  Rcpp (>= 1.0.3),
+  RcppEigen (>= 0.3.3.7.0),
+  GA (>= 3.2),
+  caret (>= 6.0-86),
+  ggplot2 (>= 3.3.0),
+  doParallel (>= 1.0.15),
+  memoise (>= 1.1.0),
+  reshape2 (>= 1.4.4),
+  Matrix (>= 1.2-18)
+LinkingTo: RcppEigen (>= 0.3.3.7.0),Rcpp (>= 1.0.3)
+Suggests:
+    BiocStyle,
+    knitr,
+    rmarkdown,
+    formatR,
+    rrBLUP,
+    qqman
+VignetteBuilder: knitr
