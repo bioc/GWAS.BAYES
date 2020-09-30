@@ -28,14 +28,16 @@ library(GWAS.BAYES)
 
 The `GWAS.BAYES` package provides statistical tools for the analysis of GWAS data. Currently the available functions allows analysis for selfing species such as rice and Arabidopsis Thaliana. 
 
-A typical GWAS analysis involves screening SNPs to obtain p-values and then using some sort of multiple comparison correction such as the Bonferroni correction or the Benjamini and Hochberg FDR correction to obtain a set of significant SNPs and this set of significant SNPs would be reported on. The procedure we propose in `GWAS.BAYES` involves going one step further and perform a Bayesian model search where the models are composed of the set of SNPs from the screening phase and/or pseudo-haplotypes. Going this step further allows researchers to identify a lower number of SNPs to look into in a lab setting thus allowing for faster confirmation of true significant SNPs.
+Our Bayesian pipeline for GWAS analysis selects significant SNPs in two stages. The first stage is the same as a typical statistical analysis of GWAS data: this stage fits as many linear mixed models as the number of SNPs, with each model containing one SNP as well as model components to account for correlation amongst the SNPs. These model fits yield a p-value for each SNP, and then multiple comparison correction such as the Bonferroni correction or the Benjamini and Hochberg FDR correction is used to obtain a set of significant SNPs. A typical GWAS analysis would then report this set of significant SNPs. 
+
+`GWAS.BAYES` goes one step further. The second stage of `GWAS.BAYES` performs Bayesian model search where the models are composed of the set of SNPs from the screening phase and/or corresponding pseudo-haplotypes. This second stage allows the SNPs to compete with each other, and typically results in a much smaller set of SNPs. This second stage provides more information on which are the most promising SNPs for follow-up lab experiments. 
 
 To this extent `GWAS.BAYES` provides functions to
 * Preprocess SNP data and phenotype responses.
 * Pre-screen individual SNP's in a traditional GWAS manor.
 * Search for the Bayesian highest probability model including multiple significant SNPs.
 
-This vignette explores three different examples to show how the functions provided in `GWAS.BAYES` to investigate the above points. The three case studies of interest are: 
+This vignette explores three different examples to show how the functions provided in `GWAS.BAYES` to implement the above points. The three case studies of interest are: 
 
 * A simulated data set with a population structure measured with principal components.
 * A simulated data set with a kinship component using a centered IBS matrix.
@@ -70,13 +72,13 @@ where
 
 * $\textbf{y}$ is the phenotype response.
 * $X$ is the matrix of SNPs (single nucleotide polymorphisms).
-* $\pmb{\beta}$ is the regression coefficients that contains the effects of the SNPs.
+* $\pmb{\beta}$ is the vector of regression coefficients that contains the effects of the SNPs.
 * $Z$ is a matrix with the population structure (eg. principal components).
 * $\textbf{u}$ is a vector of coefficients related to the population structure.
-* $A$ is a incidence matrix projecting the random effects associated with the kinship structure.
+* $A$ is an incidence matrix projecting the random effects associated with the kinship structure.
 * $\textbf{q}$ is a vector of random effects associated with the kinship structure.
 * $\pmb{\epsilon}$ is the error vector.
-* $\sigma^2$ is the variance of the residuals.
+* $\sigma^2$ is the variance of the errors.
 * $\tau$ is a parameter related to the variance of the random effects.
 * $K$ is the kinship matrix.
 
@@ -104,7 +106,7 @@ SNPs <- vignette_lm_dat[,-1]
 
 The SNPs can either be imported as strings or factors.
 
-To prepare SNPs for the analysis the data must be taken from its raw state (above) into a finer state to speed up analysis. First, apply the `standardize` function to transform the SNPs to {0.1}. This can be done in two ways. The first way is alphabetically; meaning that if the letter comes first in the alphabet then that would be a 0 while the letter that comes second in the alphabet would be a 1. The second way to do this is by major and minor allele, the major allele becomes 0 and the minor allele becomes a 1. Note either method will lead to the same significant SNPs; the two will differ by there interpretation of the results. The default method is `method = "major-minor"` and the possible methods are `method=c("major-minor","alphabetical")`.
+To prepare SNPs for the analysis the data must be taken from its raw state (above) into a finer state to speed up analysis. First, apply the `standardize` function to transform the SNPs to {0.1}. This can be done in two ways. The first way is alphabetically; meaning that if the letter comes first in the alphabet then that would be a 0 while the letter that comes second in the alphabet would be a 1. The second way to do this is by major and minor allele, the major allele becomes 0 and the minor allele becomes a 1. Note either method will lead to the same significant SNPs; the two will differ by the interpretation of the results. The default method is `method = "major-minor"` and the possible methods are `method=c("major-minor","alphabetical")`.
 
 ```{r, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
 SNPs <- standardize(SNPs = SNPs,method = "major-minor",number_cores = 1)
@@ -167,7 +169,7 @@ sum(Significant_SNPs_Bonf$Significant) #Five Significant SNPs
 which(Significant_SNPs_Bonf$Significant == 1)
 ```
 
-The pre-screen step found that the first 5 SNPs were significant which was the true setting for the simulated data set.
+The pre-screen step finds that the first 5 SNPs are significant, which are the true set of SNPs for the simulated data set.
 
 We can assess the residuals to ensure that no transformation of the phenotype response is needed. To do this call the `resids_diag` function; this function will compute the model with the significant SNPs from the preselection step and will return a plot of the residuals and the results of a Shapiro-Wilk test for normality.
 
@@ -175,7 +177,7 @@ We can assess the residuals to ensure that no transformation of the phenotype re
 resids_diag(Y = Y,SNPs = SNPs,significant = Significant_SNPs_Bonf$Significant,kinship = FALSE,principal_components = principal_comp,plot_it = TRUE)
 ```
 
-The results of the Shapiro-Wilk test shows a p-value of 0.1391 therefore there is no evidence that the residuals are not normally distributed. This suggests the assumption of this analysis is met and no transformation of the phenotype is warranted.
+The Shapiro-Wilk test has a p-value of 0.1391. Therefore, there is no evidence that the residuals are not normally distributed. This suggests the Gaussian assumption is met and no transformation of the phenotype is warranted.
 
 The `cor_plot` function creates a plot to examine the correlations between significant SNPs.
 
@@ -183,7 +185,7 @@ The `cor_plot` function creates a plot to examine the correlations between signi
 cor_plot(SNPs = SNPs,significant = Significant_SNPs_Bonf$Significant,info = FALSE)
 ```
 
-This plot highlights the correlations between pairs of SNPs with the diagonal showing correlation between the same SNP. The correlation ranges from -1 to 1. Depending on how many significant SNPs one tries to plot the plot created from the cor_plot function will be different.
+This plot highlights the correlations between pairs of SNPs with the diagonal showing correlation between the same SNP. The correlation ranges from -1 to 1. Depending on how many significant SNPs plotted, the correlation plot created from the `cor_plot` function will be different.
 
 #### False Discovery Correction
 
@@ -195,7 +197,7 @@ sum(Significant_SNPs_FDR$Significant) #Five Significant SNPs
 which(Significant_SNPs_FDR$Significant == 1)
 ```
 
-The pre-screen step with the Benjamini-Hochberg FDR correction also correctly found that the first 5 SNPs were significant.
+The pre-screen step with the Benjamini-Hochberg FDR correction also correctly finds that the first 5 SNPs are significant.
 
 #### Bayesian False Discovery Correction
 
@@ -209,7 +211,7 @@ which(Significant_SNPs_BFDR$Significant == 1)
 
 The Bayesian False Discovery Correction also correctly finds that the first five SNPs are significant.
 
-### Post-GWAS Model Selection
+### Bayesian Model Selection
 
 One of the best ways to prioritize SNPs to investigate is comparing significant SNPs with each other. To understand the relationships between significant SNPs we use a stochastic search algorithm that searches the significant SNPs proposed in the pre-screen step to understand what SNPs work well with each other. From this output one can look at the SNPs that show up in the best models first. The `postGWAS` function below implements this model search, if the number of significant SNPs is less than 12 then this model search performs an exhaustive search of the model space, meaning all possible models are explored. The reason why the number of significant SNPs less than 12 implements an exhaustive search is because an exhaustive search is much better at exploring the model space but becomes computationally intensive as the number of SNPs get large so 12 was chosen as the arbitrary cut off.
 
@@ -220,11 +222,11 @@ GA_results <- postGWAS(Y = Y,SNPs = SNPs,number_cores = 1, significant = Signifi
 GA_results
 ```
 
-The exhaustive search suggests that the best model is the model with the first 5 SNPs again matching the correct settings for this simulated data set.
+The exhaustive search suggests that the best model is the model with the first 5 SNPs again matching the correct settings for this simulated data set. In addition, the posterior probability of this model is 1, which provides further confirmation that these 5 SNPs are the most promising for follow up experiments.
 
 ## Data with Population structure measured with a kinship matrix
 
-A major feature in the `GWAS.BAYES` package is the ability to model kinship. The kinship matrix is a matrix that tries to define relatedness between individuals or species in the analysis and is a very popular tool to aid in the reduction of false positives in GWAS analyses. We will show how to calculate kinship using the `rrBLUP` package [@rrBLUP] and use our package with the kinship structure. This function takes the matrix of standardized SNPs similar to `pca_function` above. Note that since most GWAS analyses have replications of the same breed, therefore having the same exact SNP structure, this kinship function computes a kinship matrix between all different breeds with different SNP structure. 
+Another feature in the `GWAS.BAYES` package is the ability to model kinship. The kinship matrix defines relatedness between individuals or species in the analysis. Inclusion of random effects with kinship covariance matrix is a very popular tool to aid in the reduction of false positives in GWAS analyses. We will show how to calculate kinship using the function `A.mat` from the `rrBLUP` package [@rrBLUP] and use our package with the kinship structure. The function `A.mat` takes as a argument the matrix of standardized SNPs similar to `pca_function` above. Note that since most GWAS analyses have replications of the same breed, therefore having the same exact SNP structure, the `A.mat` function computes a kinship matrix between all different breeds with different SNP structure. 
 
 ```{r, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
 data("vignette_kinship_dat")
@@ -244,7 +246,7 @@ Y <- fullPreprocess$Y
 fullPreprocess$SNPs_Dropped
 ```
 
-Calculate the kinship matrix (`k`) with the `rrBLUP` package. We can parallelize this using the `n.core` argument in `A.mat`. The `rrBLUP` packages uses the centered IBS method as mentioned before.
+Calculate the kinship matrix (`k`) with the `rrBLUP` package. We can parallelize this using the `n.core` argument in `A.mat`. As mentioned above, the `rrBLUP` package uses the centered IBS method.
 
 ```{r, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
 library(rrBLUP,quietly = TRUE)
@@ -254,7 +256,7 @@ dim(k)
 
 ### Pre-screen Step
 
-Note to implement the model with a kinship structure the variable `kinship` must be set to `kinship = k`. 
+To implement the model with a kinship structure the variable `kinship` must be set to `kinship = k` where `k` is the kinship matrix. 
 
 #### Bonferroni Correction
 
@@ -268,7 +270,7 @@ which(Significant_SNPs_Bonf$Significant == 1)
 
 The first 5 SNPs are significant using the pre-screen step matching the correct setting (first five SNPs were set to be non-null).
 
-We can assess the residuals even when there is a kinship structure. Simply set the `kinship` value equal to the kinship matrix (`kinship = k`). 
+We can easily assess the residuals when there is a kinship structure. Simply set the `kinship` value equal to the kinship matrix (`kinship = k`). 
 
 ```{r, tidy=TRUE, tidy.opts=list(width.cutoff=60),fig.wide = TRUE,fig.align="center", fig.width=6.75, fig.height=4.75}
 resids_diag(Y = Y,SNPs = SNPs,significant = Significant_SNPs_Bonf$Significant,kinship = k,principal_components = FALSE,plot_it = TRUE)
@@ -298,11 +300,11 @@ sum(Significant_SNPs_BFDR$Significant) #4 Significant SNPs
 which(Significant_SNPs_BFDR$Significant == 1)
 ```
 
-The pre-screen step for the Bayesian False Discovery Correction suggests the first 5 SNPs are significant similar to the Bonferroni Correction.
+Similarly to the Bonferroni correction, the pre-screen step for the Bayesian False Discovery Correction suggests the first 5 SNPs are significant.
 
-### Post-GWAS Model Selection
+### Bayesian Model Selection
 
-Using the significant SNPs decided by the Benjamini-Hochberg FDR. Make sure to set the kinship value.
+We now perform Bayesian model selection using as candidate SNPs the significant SNPs decided by the Benjamini-Hochberg FDR. To include the kinship structure in the model, we again use the argument `kinship = k`.
 
 ```{r, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
 GA_results <- postGWAS(Y = Y,SNPs = SNPs,number_cores = 1, significant = Significant_SNPs_FDR$Significant,principal_components = FALSE,kinship = k, info = FALSE)
@@ -313,9 +315,11 @@ The genetic search correctly proposes the model with the first 5 SNPs as the bes
 
 # A. Thaliana Analysis
 
-We highlight a real analysis of _A. Thaliana_ in the paper Genetic Components of Root Architecture Remodeling in Response to Salt Stress in the Plant Cell journal [@Julkowska3198]. The article looks into salt stressing _A. Thaliana_ plants and measuring traditional phenotype characteristics. The phenotype studied in this vignette is the ratio of average lateral and main root length at low salt stress conditions (75 mM NaCl). This GWAS analysis is highlighted in figure 3 in the paper. The paper identifies a region of significant SNPs at loci 5 (between chromosome 4 and chromosome 5) using a model that controls for relatedness using a kinship matrix. The data set included in this vignette has the first 500 SNPs of chromosome 1, the last 500 SNPs in chromosome 4, and the first 500 SNPs in chromosome 5. 
+We highlight a real data analysis of _A. Thaliana_ from the paper "Genetic Components of Root Architecture Remodeling in Response to Salt Stress" published in the journal Plant Cell [@Julkowska3198]. The article studies phenotype responses of _A. Thaliana_ to salt stress. The phenotype studied in this vignette is the ratio of average lateral and main root length at low salt stress conditions (75 mM NaCl). This GWAS analysis is highlighted in figure 3 in their paper. The paper identifies a region of significant SNPs between chromosome 4 and chromosome 5 using a model that controls for relatedness using a kinship matrix. For illustration, the data set included in this vignette has the first 500 SNPs of chromosome 1, the last 500 SNPs pf chromosome 4, and the first 500 SNPs of chromosome 5. 
 
 ## Preprocessing Data
+
+First we use the `preprocess_SNPs` function to preprocess the data:
 
 ```{r, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
 data("RealDataSNPs_Y")
@@ -329,22 +333,22 @@ Y <- fullPreprocess$Y
 fullPreprocess$SNPs_Dropped
 ```
 
-Again the `preprocess_SNPs` function is used to do the preprocessing. Take note a couple of things. First, the data set used in this real life data example has no replications, so if one were using the individual functions `standarize`, `aggregate_SNPs`, and `level_function`, the `aggregate_SNPs` function would not be needed. Second, note that the `SNPs_Dropped` value returned numbers that correspond to which columns were dropped from the SNP matrix.
+Two things are worth notice. First, the data set used in this example has no replications, so if one were using the individual functions `standardize`, `aggregate_SNPs`, and `level_function`, the `aggregate_SNPs` function would not be needed. Second, note that the `SNPs_Dropped` value returned numbers that correspond to which columns were dropped from the SNP matrix due to low minor allele frequency.
 
-The SNPs associated with the data above are given below. The form for the information matrix is the chromosomes are listed in the first row and the positions are listed in the second row.
+The matrix RealDataInfo provides information about the location of each SNP. Each column corresponds to one SNP, the first row gives the chromosome and the second row gives the position within the chromosome. The code below shows information about the first 6 SNPs:
 
 ```{r, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
 data("RealDataInfo")
 head(RealDataInfo[,1:6])
 ```
 
-Some SNPs were dropped from the analysis so the information matrix must be updated as well.
+Because some SNPs were dropped from the analysis, we update the matrix RealDataInfo:
 
 ```{r}
 RealDataInfo <- RealDataInfo[,-fullPreprocess$SNPs_Dropped]
 ```
 
-Because we only pulled the data for a select number of SNPs the kinship matrix calculated from this set of SNPs will not be representative of the true kinship matrix. That is why we calculated the kinship matrix on the entire set of SNPs and import that matrix into our analysis.
+Because we only pulled the data for a select number of SNPs the kinship matrix calculated from this set of SNPs will not be representative of the true kinship matrix. Because of that, we calculated the kinship matrix on the entire set of SNPs. We now import the kinship matrix into our analysis:
 
 ```{r, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
 data("RealDataKinship")
@@ -373,7 +377,7 @@ Plotting the residuals to check the normality assumption,
 resids_diag(Y = Y, SNPs = SNPs, significant = Significant_SNPs$Significant,kinship = kinship)
 ```
 
-With a p-value less than 0.05 for the Shapiro-Wilk test there is strong evidence that the residuals are not normally distributed and therefore violating an assumption of the pre-screen analysis. A transformation of the response is warranted; a log transformation turns out to be suitable. Other transformations such as a square root transformation could work as well it just turns out the log transformation returns an acceptable Shapiro-Wilk p-value.
+With a p-value less than 0.05 for the Shapiro-Wilk test there is strong evidence that the residuals are not normally distributed and therefore violating the Gaussian assumption. A transformation of the response is warranted; a log transformation returns an acceptable Shapiro-Wilk p-value.
 
 ```{r, tidy=TRUE, tidy.opts=list(width.cutoff=60)}
 Significant_SNPs <- preselection(Y = log(Y), SNPs = SNPs,number_cores = 1, principal_components = FALSE,frequentist = TRUE,controlrate = "bonferroni",threshold = .05,kinship = kinship,info = RealDataInfo)
@@ -387,7 +391,7 @@ With the new log transformed response there are now 3 significant SNPs from chro
 resids_diag(Y = log(Y), SNPs = SNPs, significant = Significant_SNPs$Significant,kinship = kinship)
 ```
 
-Now there is no evidence that the residuals are non-normal therefore we can trust the results.
+Now there is no evidence of violation of the Gaussian assumption. Therefore, we can trust the results.
 
 ## Manhattan and QQ Plots using qqman package
 
@@ -406,7 +410,7 @@ Another thing the `qqman` package does that is useful for GWAS papers is QQ Plot
 qq(Significant_SNPs$P_values)
 ```
 
-## Post-GWAS Model Selection
+## Bayesian Model Selection
 
 Moving forward to the model selection.
 
