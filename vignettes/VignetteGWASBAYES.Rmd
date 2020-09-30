@@ -33,7 +33,8 @@ Our Bayesian pipeline for GWAS analysis selects significant SNPs in two stages. 
 
 `GWAS.BAYES` goes one step further. The second stage of `GWAS.BAYES` performs Bayesian model search where the models are composed of the set of SNPs from the screening phase and/or corresponding pseudo-haplotypes. This second stage allows the SNPs to compete with each other, and typically results in a much smaller set of SNPs. This second stage provides more information on which are the most promising SNPs for follow-up lab experiments. 
 
-To this extent `GWAS.BAYES` provides functions to
+To this extent `GWAS.BAYES` provides functions to:
+
 * Preprocess SNP data and phenotype responses.
 * Pre-screen individual SNP's in a traditional GWAS manor.
 * Search for the Bayesian highest probability model including multiple significant SNPs.
@@ -442,13 +443,13 @@ manhattan(Significant_SNPs,chr = "Chromosomes",bp = "Positions",
 
 The different colors in the manhattan plot highlight different chromosomes.
 
-The `qqman` package can also make QQ plots for the p-values with the function `qq`. The function plots the expected value (under the null hypothesis of no SNP effect) of -log10(p-value) in the x-axis and the abserved p-value in the y-axis. Departures from a straight line indicate that there are SNPs that are predictive of the phenotype. Here is how to use the `qq` function:
+The `qqman` package can also make QQ plots for the p-values with the function `qq`. The function plots the expected value (under the null hypothesis of no SNP effect) of -log10(p-value) in the x-axis and the observed p-value in the y-axis. Departures from a straight line indicate that there are SNPs that are predictive of the phenotype. Here is how to use the `qq` function:
 
 ```{r, fig.wide = TRUE,fig.align="center", fig.width=6.75, fig.height=4.75}
 qq(Significant_SNPs$P_values)
 ```
 
-Because the line deviates from a straight lin, there is evidence that there are SNPs that are predictive of the ratio of average lateral root and main root length at low salt stress levels.
+Because the line deviates from a straight line, there is evidence that there are SNPs that are predictive of the ratio of average lateral root and main root length at low salt stress levels.
 
 ## Bayesian Model Selection
 
