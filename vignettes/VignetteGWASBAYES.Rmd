@@ -461,7 +461,7 @@ GA_results <- postGWAS(Y = log(Y),SNPs = SNPs,number_cores = 1,
 GA_results
 ```
 
-With 4 candidate SNPs, there are 2^4 - 1 = 15 possible models. Because the number of candidate SNPs is 4 (<= 12), the function `postGWAS` performs an exhaustive search and computes the posterior probabilities for all 7 possible models. In this example, models 2 through 8 have the exact same posterior probability. One way to interpret this result is that each of these three SNPs (801, 820, and 852) provide the same information. Another way of looking at this result is that having 1 SNP vs having all 3 of these SNPs in the model makes no difference. This may indicate high correlations amongst these 3 SNPs. 
+With 4 candidate SNPs, there are 2^4 - 1 = 15 possible models. The reason 15 models do not show up in the above output is because the ouptut is limited to showing models only in top cumulative 95% of the posterior probability. Because the number of candidate SNPs is 4 (<= 12), the function `postGWAS` performs an exhaustive search and computes the posterior probabilities for all 7 possible models. In this example, models 2 through 8 have the exact same posterior probability. One way to interpret this result is that each of these three SNPs (801, 820, and 852) provide the same information. Another way of looking at this result is that having 1 SNP vs having all 3 of these SNPs in the model makes no difference. This may indicate high correlations amongst these 3 SNPs. 
 
 The genetic search algorithm shows us that the three SNPs provide the exact same information to the phenotype. That is why the genetic search model proposes 7 different models. It tells us that having 1 SNP vs having all 3 SNPs makes no difference, they provide the same information. In a lab setting these three SNPs should be looked at and since these SNPs are in the same region this region should be a high priority for further investigation.
 
@@ -469,7 +469,7 @@ Lets investigate this further with a correlation plot.
 
 ```{r, fig.wide = TRUE,fig.align="center", fig.width=6.75, fig.height=4.75}
 cor_plot(SNPs = SNPs[,Significant_SNPs$Significant == 1],
-  significant = GA_results$Solution[8,],
+  significant = c(1,1,1,1),
   info = RealDataInfo[,Significant_SNPs$Significant == 1])
 ```
 
@@ -488,7 +488,7 @@ which(Significant_SNPs$Significant == 1)
 There is 18 SNPs between the first two SNPs, 12 SNPs between the second and third SNPs, and 18 SNPs between the third and fourth SNPs, with the total number of SNPs being 52 for this region. These values are only looking at SNPs used in this analysis and not SNPs that were dropped due to low minor allele frequency. To get a more in depth picture the summary statistics for the minor allele frequency of these 52 SNPs is given below:
 
 ```{r}
-summary(1 - colMeans(SNPs[,902:953]))
+summary(1 - colMeans(SNPs[,801:852]))
 ```
 
 There appears to be a high number of minor allele's for these 52 SNPs indicating this is a great location to further investigate in a lab setting.
