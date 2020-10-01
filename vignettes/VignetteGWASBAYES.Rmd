@@ -461,7 +461,7 @@ GA_results <- postGWAS(Y = log(Y),SNPs = SNPs,number_cores = 1,
 GA_results
 ```
 
-With 4 candidate SNPs, there are 2^4 - 1 = 15 possible models. Because the number of candidate SNPs is 4 (<= 12), the function `postGWAS` performs an exhaustive search and computes the posterior probabilities for all 7 possible models. In this example, models 2 through 8 have the exact same posterior probability. One way to interpret this result is that each of these three SNPs (801, 820, and 852) provide the same information. Another way of looking at this result is that having 1 SNP vs having all 3 SNPs in the model makes no difference. This may indicate high correlations amongst these 3 SNPs. 
+With 4 candidate SNPs, there are 2^4 - 1 = 15 possible models. Because the number of candidate SNPs is 4 (<= 12), the function `postGWAS` performs an exhaustive search and computes the posterior probabilities for all 7 possible models. In this example, models 2 through 8 have the exact same posterior probability. One way to interpret this result is that each of these three SNPs (801, 820, and 852) provide the same information. Another way of looking at this result is that having 1 SNP vs having all 3 of these SNPs in the model makes no difference. This may indicate high correlations amongst these 3 SNPs. 
 
 The genetic search algorithm shows us that the three SNPs provide the exact same information to the phenotype. That is why the genetic search model proposes 7 different models. It tells us that having 1 SNP vs having all 3 SNPs makes no difference, they provide the same information. In a lab setting these three SNPs should be looked at and since these SNPs are in the same region this region should be a high priority for further investigation.
 
