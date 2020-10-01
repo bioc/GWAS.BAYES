@@ -401,7 +401,7 @@ sum(Significant_SNPs$Significant)#11 Significant SNPs
 Significant_SNPs[Significant_SNPs$Significant == 1,c(1,2)]
 ```
 
-There are 10 SNPs from the end of Chromosome 4 that are significant and one SNP from chromosome 1, which matches the results from the paper.
+There are 10 SNPs from the end of Chromosome 4 that are significant, which matches the results from the paper.
 
 Plotting the residuals to check the normality assumption,
 
@@ -416,11 +416,11 @@ With a p-value less than 0.05 for the Shapiro-Wilk test there is strong evidence
 Significant_SNPs <- preselection(Y = log(Y), SNPs = SNPs,number_cores = 1, 
   principal_components = FALSE,frequentist = TRUE,controlrate = "bonferroni",
   threshold = .05,kinship = kinship,info = RealDataInfo)
-sum(Significant_SNPs$Significant)#3 Significant SNPs
+sum(Significant_SNPs$Significant)#4 Significant SNPs
 Significant_SNPs[Significant_SNPs$Significant == 1,c(1,2)]
 ```
 
-With the new log transformed response there are now 3 significant SNPs from chromosome 4.
+With the new log transformed response there are now 4 significant SNPs from chromosome 4.
 
 ```{r, fig.wide = TRUE,fig.align="center", fig.width=6.75, fig.height=4.75}
 resids_diag(Y = log(Y), SNPs = SNPs, 
@@ -452,7 +452,7 @@ Because the line deviates from a straight line, there is evidence that there are
 
 ## Bayesian Model Selection
 
-Next we perform Bayesian model selection to identify, amongst these three SNPs, which ones are important for predicting the phenotype.
+Next we perform Bayesian model selection to identify, amongst these 4 SNPs, which ones are important for predicting the phenotype.
 
 ```{r }
 GA_results <- postGWAS(Y = log(Y),SNPs = SNPs,number_cores = 1, 
@@ -461,7 +461,7 @@ GA_results <- postGWAS(Y = log(Y),SNPs = SNPs,number_cores = 1,
 GA_results
 ```
 
-With three candidate SNPs, there are 2^3 - 1 = 7 possible models. Because the number of candidate SNPs is 3 (<= 12), the function `postGWAS` performs an exhaustive search and computes the posterior probabilities for all 7 possible models. In this example, all possible models have the same posterior probability equal to 1/7 = 0.1427. One way to interpret this result is that each of these three SNPs provides the same information. Another way of looking at this result is that having 1 SNP vs having all 3 SNPs in the model makes no difference. This may indicate high correlations amongst these 3 SNPs. 
+With 4 candidate SNPs, there are 2^4 - 1 = 15 possible models. Because the number of candidate SNPs is 4 (<= 12), the function `postGWAS` performs an exhaustive search and computes the posterior probabilities for all 7 possible models. In this example, models 2 through 8 have the exact same posterior probability. One way to interpret this result is that each of these three SNPs (801, 820, and 852) provide the same information. Another way of looking at this result is that having 1 SNP vs having all 3 SNPs in the model makes no difference. This may indicate high correlations amongst these 3 SNPs. 
 
 The genetic search algorithm shows us that the three SNPs provide the exact same information to the phenotype. That is why the genetic search model proposes 7 different models. It tells us that having 1 SNP vs having all 3 SNPs makes no difference, they provide the same information. In a lab setting these three SNPs should be looked at and since these SNPs are in the same region this region should be a high priority for further investigation.
 
@@ -469,23 +469,23 @@ Lets investigate this further with a correlation plot.
 
 ```{r, fig.wide = TRUE,fig.align="center", fig.width=6.75, fig.height=4.75}
 cor_plot(SNPs = SNPs[,Significant_SNPs$Significant == 1],
-  significant = GA_results$Solution[7,],
+  significant = GA_results$Solution[8,],
   info = RealDataInfo[,Significant_SNPs$Significant == 1])
 ```
 
-Indeed the correlation plot indicates that all correlations between pairs of these 3 SNPs are equal to 1. To investigate the further the minor allele frequency of these 3 significant SNPs can be calculated with the following code:
+Indeed the correlation plot indicates that all correlations between pairs of these 3 SNPs are equal to 1. To investigate the further the minor allele frequency of the 4 significant SNPs can be calculated with the following code:
 
 ```{r}
 1 - colMeans(SNPs[,Significant_SNPs$Significant == 1])
 ```
 
-The 3 significant all of the same minor allele frequency of 0.04268. We can look at the number of SNPs in between these 3 SNPs to understand the area of the gene.
+Three of the significant SNPs have the same minor allele frequency of 0.04268, matching the belief that these SNPs are identical. We can look at the number of SNPs in between the 4 SNPs to understand the area of the gene.
 
 ```{r}
 which(Significant_SNPs$Significant == 1)
 ```
 
-There is 18 SNPs between the first two significant SNPs, 31 SNPs between the second and third significant, with the total number of SNPs being 52. These values are only looking at SNPs used in this analysis and not SNPs that were dropped due to low minor allele frequency. To get a more in depth picture the summary statistics for the minor allele frequency of these 52 SNPs is given below:
+There is 18 SNPs between the first two SNPs, 12 SNPs between the second and third SNPs, and 18 SNPs between the third and fourth SNPs, with the total number of SNPs being 52 for this region. These values are only looking at SNPs used in this analysis and not SNPs that were dropped due to low minor allele frequency. To get a more in depth picture the summary statistics for the minor allele frequency of these 52 SNPs is given below:
 
 ```{r}
 summary(1 - colMeans(SNPs[,902:953]))
