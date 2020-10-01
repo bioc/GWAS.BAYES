@@ -66,6 +66,6 @@ data("RealDataKinship")
 kinship <- as.matrix(RealDataKinship)
 Significant_SNPs <- preselection(Y = log(Y), SNPs = SNPs,number_cores = 1, principal_components = FALSE,frequentist = TRUE,controlrate = "bonferroni",threshold = .05,kinship = kinship, info = RealDataInfo)
 
-postGWAS_Haplotype(Y = log(Y),SNPs = SNPs,info = RealDataInfo,size = 10,number_cores = 1, significant = Significant_SNPs$Significant,principal_components = FALSE,kinship = kinship)
+#postGWAS_Haplotype(Y = log(Y),SNPs = SNPs,info = RealDataInfo,size = 10,number_cores = 1, significant = Significant_SNPs$Significant,principal_components = FALSE,kinship = kinship)
 
 }

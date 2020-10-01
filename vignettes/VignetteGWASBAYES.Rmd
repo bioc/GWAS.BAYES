@@ -27,19 +27,19 @@ library(GWAS.BAYES)
 
 # Introduction
 
-The `GWAS.BAYES` package provides statistical tools for the analysis of GWAS data. Currently the available functions allows analysis for selfing species such as rice and Arabidopsis Thaliana. 
+The `GWAS.BAYES` package provides statistical tools for the analysis of GWAS data. Currently the available functions allow analysis for selfing species such as rice and Arabidopsis Thaliana. 
 
 Our Bayesian pipeline for GWAS analysis selects significant SNPs in two stages. The first stage is the same as a typical statistical analysis of GWAS data: this stage fits as many linear mixed models as the number of SNPs, with each model containing one SNP as well as model components to account for correlation amongst the SNPs. These model fits yield a p-value for each SNP, and then multiple comparison correction such as the Bonferroni correction or the Benjamini and Hochberg FDR correction is used to obtain a set of significant SNPs. A typical GWAS analysis would then report this set of significant SNPs. 
 
-`GWAS.BAYES` goes one step further. The second stage of `GWAS.BAYES` performs Bayesian model search where the models are composed of the set of SNPs from the screening phase and/or corresponding pseudo-haplotypes. This second stage allows the SNPs to compete with each other, and typically results in a much smaller set of SNPs. This second stage provides more information on which are the most promising SNPs for follow-up lab experiments. 
+`GWAS.BAYES` goes one step further. The second stage of `GWAS.BAYES` performs Bayesian model search where the models are composed of the set of SNPs from the screening phase. This second stage allows the SNPs to compete with each other, and typically results in a much smaller set of SNPs. This second stage provides more information on which are the most promising SNPs for follow-up lab experiments. 
 
 To this extent `GWAS.BAYES` provides functions to:
 
 * Preprocess SNP data and phenotype responses.
-* Pre-screen individual SNP's in a traditional GWAS manor.
+* Pre-screen individual SNPs in a traditional GWAS manor.
 * Search for the Bayesian highest probability model including multiple significant SNPs.
 
-This vignette explores three different examples to show how the functions provided in `GWAS.BAYES` to implement the above points. The three case studies of interest are: 
+This vignette explores three different examples to show how the functions provided in `GWAS.BAYES` implement the above points. The three case studies of interest are: 
 
 * A simulated data set with a population structure measured with principal components.
 * A simulated data set with a kinship component using a centered IBS matrix.
@@ -60,7 +60,6 @@ The functions implemented in `GWAS.BAYES` are described below:
 * `resids_diag` Takes the significant SNPs from the GWAS analysis and assesses the distribution of the residuals. Users should use this function to make sure the assumptions of the GWAS analysis are met.
 * `postGWAS` Searches for the Bayesian highest probability models that include multiple SNPs using a genetic search algorithm.
 * `cor_plot` Creates a plot that examines correlations between specific sets of SNPs.
-* `postGWAS_Haplotype` Searches for the Bayesian highest probability models that include multiple SNPs and pseudo-haplotypes using a genetic search algorithm.
 
 # Model/Model Assumptions
 
@@ -230,7 +229,7 @@ The Bayesian False Discovery Correction also correctly finds that the first five
 
 ### Bayesian Model Selection
 
-One of the best ways to prioritize SNPs to investigate is comparing significant SNPs with each other. To understand the relationships between significant SNPs we use a stochastic search algorithm that searches the significant SNPs proposed in the pre-screen step to understand what SNPs work well with each other. From this output one can look at the SNPs that show up in the best models first. The `postGWAS` function below implements this model search, if the number of significant SNPs is less than 12 then this model search performs an exhaustive search of the model space, meaning all possible models are explored. The reason why the number of significant SNPs less than 12 implements an exhaustive search is because an exhaustive search is much better at exploring the model space but becomes computationally intensive as the number of SNPs get large so 12 was chosen as the arbitrary cut off.
+The function postGWAS implements the second stage of GWAS.BAYES, which performs Bayesian model search  where the set of candidate SNPs obtained from the screening phase compete with each other. The resulting best models typically contain a much smaller set of SNPs, which are the most promising SNPs for follow-up lab experiments.
 
 The function below uses the results from the pre-screen step with the Bonferroni Correction. Note this is implemented with the `significant` argument.
 
@@ -345,7 +344,7 @@ The genetic search correctly proposes the model with the first 5 SNPs as the bes
 
 # A. Thaliana Analysis
 
-We highlight a real data analysis of _A. Thaliana_ from the paper "Genetic Components of Root Architecture Remodeling in Response to Salt Stress" published in the journal Plant Cell [@Julkowska3198]. The article studies phenotype responses of _A. Thaliana_ to salt stress. The phenotype studied in this vignette is the ratio of average lateral and main root length at low salt stress conditions (75 mM NaCl). This GWAS analysis is highlighted in figure 3 in their paper. The paper identifies a region of significant SNPs between chromosome 4 and chromosome 5 using a model that controls for relatedness using a kinship matrix. For illustration, the data set included in this vignette has the first 500 SNPs of chromosome 1, the last 500 SNPs pf chromosome 4, and the first 500 SNPs of chromosome 5. 
+We highlight a real data analysis of _A. Thaliana_ from the paper "Genetic Components of Root Architecture Remodeling in Response to Salt Stress" published in the journal Plant Cell [@Julkowska3198]. The article studies phenotype responses of _A. Thaliana_ to salt stress. The phenotype studied in this vignette is the ratio of average lateral and main root length at low salt stress conditions (75 mM NaCl). This GWAS analysis is highlighted in figure 3 in their paper. The paper identifies a region of significant SNPs between chromosome 4 and chromosome 5 using a model that controls for relatedness using a kinship matrix. For illustration, the data set included in this vignette has the first 500 SNPs of chromosome 1, the last 500 SNPs of chromosome 4, and the first 500 SNPs of chromosome 5. 
 
 ## Preprocessing Data
 
@@ -462,7 +461,7 @@ GA_results <- postGWAS(Y = log(Y),SNPs = SNPs,number_cores = 1,
 GA_results
 ```
 
-With three candidate SNPs, there are 2^3-1=7 possible models. Because the number of candidate SNPs is 3 (<= 12), the function `postGWAS` performs an exhaustive search and computes the posterior probabilities for all 7 possible models. In this example, all possible models have the same posterior probability equal to 1/7 = 0.1427. One way to interpret this result is that each of these three SNPs provides the same information. Another way of looking at this result is that having 1 SNP vs having all 3 SNPs in the model makes no difference. This may indicate high correlations amongst these 3 SNPs. 
+With three candidate SNPs, there are 2^3 - 1 = 7 possible models. Because the number of candidate SNPs is 3 (<= 12), the function `postGWAS` performs an exhaustive search and computes the posterior probabilities for all 7 possible models. In this example, all possible models have the same posterior probability equal to 1/7 = 0.1427. One way to interpret this result is that each of these three SNPs provides the same information. Another way of looking at this result is that having 1 SNP vs having all 3 SNPs in the model makes no difference. This may indicate high correlations amongst these 3 SNPs. 
 
 The genetic search algorithm shows us that the three SNPs provide the exact same information to the phenotype. That is why the genetic search model proposes 7 different models. It tells us that having 1 SNP vs having all 3 SNPs makes no difference, they provide the same information. In a lab setting these three SNPs should be looked at and since these SNPs are in the same region this region should be a high priority for further investigation.
 
@@ -474,6 +473,24 @@ cor_plot(SNPs = SNPs[,Significant_SNPs$Significant == 1],
   info = RealDataInfo[,Significant_SNPs$Significant == 1])
 ```
 
-Indeed the correlation plot indicates that all correlations between pairs of these 3 SNPs are equal to 1. Further investigation reveals that these 3 SNPs had the same minor allele frequency and there was about 25 SNPs between each of these SNPs.
+Indeed the correlation plot indicates that all correlations between pairs of these 3 SNPs are equal to 1. To investigate the further the minor allele frequency of these 3 significant SNPs can be calculated with the following code:
+
+```{r}
+1 - colMeans(SNPs[,Significant_SNPs$Significant == 1])
+```
+
+The 3 significant all of the same minor allele frequency of 0.04268. We can look at the number of SNPs in between these 3 SNPs to understand the area of the gene.
+
+```{r}
+which(Significant_SNPs$Significant == 1)
+```
+
+There is 18 SNPs between the first two significant SNPs, 31 SNPs between the second and third significant, with the total number of SNPs being 52. These values are only looking at SNPs used in this analysis and not SNPs that were dropped due to low minor allele frequency. To get a more in depth picture the summary statistics for the minor allele frequency of these 52 SNPs is given below:
+
+```{r}
+summary(1 - colMeans(SNPs[,902:953]))
+```
+
+There appears to be a high number of minor allele's for these 52 SNPs indicating this is a great location to further investigate in a lab setting.
 
 # References

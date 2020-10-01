@@ -1513,15 +1513,6 @@ A information matrix, where the first row is the chromosome information and the 
     \item{\code{V1506}}{a numeric vector}
   }
 }
-\details{
-%%  ~~ If necessary, more details than the __description__ above ~~
-}
-\source{
-%%  ~~ reference to a publication or URL from which the data were obtained ~~
-}
-\references{
-%%  ~~ possibly secondary sources and usages ~~
-}
 \examples{
 data(RealDataInfo)
 }

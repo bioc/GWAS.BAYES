@@ -12,1506 +12,1506 @@ A dataset associated with the Vignette for GWAS.BAYES.
   A data frame with 328 observations on the following 1501 variables.
   \describe{
     \item{\code{Phenotype}}{a numeric vector}
-    \item{\code{SNP1}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP2}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP3}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP4}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP5}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP6}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP7}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP8}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP9}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP10}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP11}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP12}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP13}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP14}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP15}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP16}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP17}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP18}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP19}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP20}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP21}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP22}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP23}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP24}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP25}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP26}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP27}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP28}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP29}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP30}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP31}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP32}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP33}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP34}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP35}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP36}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP37}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP38}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP39}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP40}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP41}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP42}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP43}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP44}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP45}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP46}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP47}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP48}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP49}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP50}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP51}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP52}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP53}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP54}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP55}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP56}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP57}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP58}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP59}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP60}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP61}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP62}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP63}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP64}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP65}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP66}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP67}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP68}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP69}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP70}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP71}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP72}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP73}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP74}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP75}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP76}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP77}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP78}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP79}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP80}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP81}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP82}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP83}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP84}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP85}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP86}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP87}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP88}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP89}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP90}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP91}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP92}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP93}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP94}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP95}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP96}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP97}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP98}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP99}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP100}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP101}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP102}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP103}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP104}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP105}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP106}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP107}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP108}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP109}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP110}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP111}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP112}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP113}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP114}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP115}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP116}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP117}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP118}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP119}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP120}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP121}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP122}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP123}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP124}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP125}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP126}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP127}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP128}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP129}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP130}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP131}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP132}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP133}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP134}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP135}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP136}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP137}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP138}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP139}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP140}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP141}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP142}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP143}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP144}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP145}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP146}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP147}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP148}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP149}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP150}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP151}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP152}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP153}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP154}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP155}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP156}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP157}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP158}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP159}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP162}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP163}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP164}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP165}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP166}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP167}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP168}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP169}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP170}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP171}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP172}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP173}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP174}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP175}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP176}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP177}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP178}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP179}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP180}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP181}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP182}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP183}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP184}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP185}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP186}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP187}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP188}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP189}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP190}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP191}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP192}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP193}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP194}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP195}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP196}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP197}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP198}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP199}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP200}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP201}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP202}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP203}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP204}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP205}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP206}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP207}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP208}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP209}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP210}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP211}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP212}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP213}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP214}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP215}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP216}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP217}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP218}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP219}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP220}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP221}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP222}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP223}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP224}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP225}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP226}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP227}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP228}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP229}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP230}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP231}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP232}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP233}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP234}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP235}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP236}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP237}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP238}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP239}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP240}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP241}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP242}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP243}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP244}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP245}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP246}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP247}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP248}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP249}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP250}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP251}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP252}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP253}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP254}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP255}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP256}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP257}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP258}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP259}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP260}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP261}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP262}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP263}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP264}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP265}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP266}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP267}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP268}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP269}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP270}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP271}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP272}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP273}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP274}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP275}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP276}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP277}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP278}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP279}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP280}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP281}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP282}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP283}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP284}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP285}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP286}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP287}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP288}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP289}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP290}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP291}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP292}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP293}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP294}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP295}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP296}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP297}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP298}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP299}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP300}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP301}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP302}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP303}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP304}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP305}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP306}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP307}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP308}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP309}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP310}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP311}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP312}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP313}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP314}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP315}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP316}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP317}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP318}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP319}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP320}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP321}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP322}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP323}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP324}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP325}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP326}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP327}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP328}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP329}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP330}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP331}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP332}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP333}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP334}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP335}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP336}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP337}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP338}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP339}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP340}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP341}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP342}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP343}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP344}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP345}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP346}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP347}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP348}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP349}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP350}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP351}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP352}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP353}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP354}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP355}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP356}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP357}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP358}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP359}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP360}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP361}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP362}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP363}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP364}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP365}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP366}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP367}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP368}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP369}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP370}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP371}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP372}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP373}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP374}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP375}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP376}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP377}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP378}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP379}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP380}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP381}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP382}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP383}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP384}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP385}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP386}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP387}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP388}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP389}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP390}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP391}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP392}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP393}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP394}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP395}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP396}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP397}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP398}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP399}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP400}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP401}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP402}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP403}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP404}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP405}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP406}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP407}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP408}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP409}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP410}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP411}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP412}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP413}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP414}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP415}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP416}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP417}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP418}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP419}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP420}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP421}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP422}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP423}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP424}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP425}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP426}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP427}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP428}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP429}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP430}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP431}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP432}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP433}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP434}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP435}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP436}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP437}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP438}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP439}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP440}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP441}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP442}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP443}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP444}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP445}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP446}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP447}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP448}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP449}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP450}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP451}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP452}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP453}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP454}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP455}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP456}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP457}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP458}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP459}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP460}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP461}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP462}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP463}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP464}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP465}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP466}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP467}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP468}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP469}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP470}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP471}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP472}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP473}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP474}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP475}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP476}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP477}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP478}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP479}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP480}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP481}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP482}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP483}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP484}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP485}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP486}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP487}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP488}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP489}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP490}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP491}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP492}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP493}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP494}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP495}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP496}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP497}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP498}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP499}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP500}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160348}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160349}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160350}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160351}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160352}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160353}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160354}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160355}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160356}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160357}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160358}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160359}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160360}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160361}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160362}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160363}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160364}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160365}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160366}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160367}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160368}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160369}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160370}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160371}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160372}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160373}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160374}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160375}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160376}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160377}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160378}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160379}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160380}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160381}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160382}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160383}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160384}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160385}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160386}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160387}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160388}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160389}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160390}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160391}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160392}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160393}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160394}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160395}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160396}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160397}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160398}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160399}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160400}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160401}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160402}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160403}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160404}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160405}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160406}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160407}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160408}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160409}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160410}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160411}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160412}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160413}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160414}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160415}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160416}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160417}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160418}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160419}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160420}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160421}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160422}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160423}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160424}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160425}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160426}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160427}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160428}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160429}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160430}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160431}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160432}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160433}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160434}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160435}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160436}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160437}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160438}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160439}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160440}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160441}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160442}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160443}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160444}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160445}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160446}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160447}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160448}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160449}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160450}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160451}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160452}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160453}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160454}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160455}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160456}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160457}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160458}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160459}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160460}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160461}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160462}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160463}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160464}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160465}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160466}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160467}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160468}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160469}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160470}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160471}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160472}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160473}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160474}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160475}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160476}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160477}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160478}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160479}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160480}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160481}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160482}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160483}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160484}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160485}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160486}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160487}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160488}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160489}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160490}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160491}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160492}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160493}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160494}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160495}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160496}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160497}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160498}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160499}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160500}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160501}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160502}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160503}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160504}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160505}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160506}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160507}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160508}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160509}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160510}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160511}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160512}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160513}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160514}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160515}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160516}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160517}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160518}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160519}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160520}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160521}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160522}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160523}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160524}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160525}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160526}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160527}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160528}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160529}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160530}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160531}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160532}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160533}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160534}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160535}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160536}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160537}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160538}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160539}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160540}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160541}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160542}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160543}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160544}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160545}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160546}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160547}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160548}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160549}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160550}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160551}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160552}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160553}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160554}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160555}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160556}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160557}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160558}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160559}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160560}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160561}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160562}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160563}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160564}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160565}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160566}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160567}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160568}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160569}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160570}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160571}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160572}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160573}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160574}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160575}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160576}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160577}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160578}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160579}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160580}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160581}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160582}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160583}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160584}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160585}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160586}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160587}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160588}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160589}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160590}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160591}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160592}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160593}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160594}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160595}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160596}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160597}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160598}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160599}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160600}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160601}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160602}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160603}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160604}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160605}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160606}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160607}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160608}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160609}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160610}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160611}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160612}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160613}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160614}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160615}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160616}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160617}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160618}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160619}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160620}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160621}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160622}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160623}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160624}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160625}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160626}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160627}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160628}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160629}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160630}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160631}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160632}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160633}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160634}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160635}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160636}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160637}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160638}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160639}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160640}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160641}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160642}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160643}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160644}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160645}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160646}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160647}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160648}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160649}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160650}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160651}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160652}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160653}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160654}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160655}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160656}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160657}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160658}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160659}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160660}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160661}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160662}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160663}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160664}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160665}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160666}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160667}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160668}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160669}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160670}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160671}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160672}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160673}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160674}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160675}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160676}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160677}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160678}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160679}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160680}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160681}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160682}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160683}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160684}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160685}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160686}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160687}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160688}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160689}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160690}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160691}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160692}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160693}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160694}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160695}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160696}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160697}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160698}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160699}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160700}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160701}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160702}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160703}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160704}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160705}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160706}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160707}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160708}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160709}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160710}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160711}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160712}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160713}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160714}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160715}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160716}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160717}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160718}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160719}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160720}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160721}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160722}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160723}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160724}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160725}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160726}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160727}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160728}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160729}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160730}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160731}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160732}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160733}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160734}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160735}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160736}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160737}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160738}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160739}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160740}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160741}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160742}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160743}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160744}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160745}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160746}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160747}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160748}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160749}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160750}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160751}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160752}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160753}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160754}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160755}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160756}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160757}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160758}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160759}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160760}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160761}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160762}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160763}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160764}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160765}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160766}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160767}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160768}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160769}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160770}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160771}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160772}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160773}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160774}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160775}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160776}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160777}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160778}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160779}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160780}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160781}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160782}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160783}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160784}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160785}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160786}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160787}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160788}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160789}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160790}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160791}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160792}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160793}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160794}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160795}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160796}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160797}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160798}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160799}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160800}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160801}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160802}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160803}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160804}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160805}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160806}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160807}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160808}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160809}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160810}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160811}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160812}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160813}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160814}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160815}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160816}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160817}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160818}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160819}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160820}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160821}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160822}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160823}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160824}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160825}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160826}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160827}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160828}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160829}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160830}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160831}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160832}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160833}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160834}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160835}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160836}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160837}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160838}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160839}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160840}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160841}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160842}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160843}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160844}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160845}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160846}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160847}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160848}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160849}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160850}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160851}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160852}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160853}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160854}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160855}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160856}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160857}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160858}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160859}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160860}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160861}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160862}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160863}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160864}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160865}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160866}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160867}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160868}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160869}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160870}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160871}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160872}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160873}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160874}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160875}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160876}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160877}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160878}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160879}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160880}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160881}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160882}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160883}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160884}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160885}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160886}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160887}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160888}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160889}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160890}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160891}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160892}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160893}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160894}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160895}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160896}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160897}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160898}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160899}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160900}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160901}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160902}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160903}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160904}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160905}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160906}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160907}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160908}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160909}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160910}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160911}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160912}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160913}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160914}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160915}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160916}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160917}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160918}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160919}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160920}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160921}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160922}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160923}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160924}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160925}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160926}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160927}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160928}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160929}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160930}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160931}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160932}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160933}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160934}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160935}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160936}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160937}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160938}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160939}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160940}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160941}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160942}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160943}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160944}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160945}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160946}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160947}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160948}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160949}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160950}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160951}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160952}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160953}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160954}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160955}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160956}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160957}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160958}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160959}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160960}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160961}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160962}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160963}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160964}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160965}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160966}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160967}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160968}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160969}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160970}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160971}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160972}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160973}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160974}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160975}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160976}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160977}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160978}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160979}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160980}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160981}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160982}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160983}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160984}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160985}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160986}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160987}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160988}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160989}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160990}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160991}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP160992}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160993}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160994}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP160995}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP160996}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP160997}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP160998}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP160999}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161000}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161001}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161002}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161003}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161004}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161005}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161006}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161007}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161008}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161009}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161010}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161011}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161012}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161013}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161014}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161015}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161016}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161017}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161018}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161019}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161020}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161021}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161022}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161023}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161024}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161025}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161026}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161027}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161028}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161029}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161030}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161031}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161032}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161033}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161034}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161035}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161036}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161037}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161038}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161039}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161040}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161041}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161042}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161043}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161044}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161045}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161046}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161047}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161048}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161049}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161050}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161051}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161052}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161053}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161054}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161055}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161056}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161057}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161058}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161059}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161060}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161061}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161062}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161063}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161064}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161065}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161066}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161067}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161068}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161069}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161070}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161071}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161072}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161073}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161074}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161075}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161076}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161077}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161078}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161079}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161080}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161081}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161082}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161083}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161084}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161085}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161086}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161087}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161088}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161089}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161090}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161091}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161092}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161093}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161094}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161095}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161096}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161097}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161098}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161099}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161100}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161101}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161102}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161103}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161104}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161105}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161106}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161107}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161108}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161109}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161110}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161111}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161112}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161113}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161114}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161115}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161116}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161117}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161118}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161119}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161120}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161121}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161122}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161123}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161124}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161125}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161126}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161127}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161128}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161129}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161130}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161131}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161132}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161133}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161134}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161135}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161136}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161137}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161138}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161139}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161140}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161141}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161142}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161143}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161144}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161145}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161146}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161147}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161148}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161149}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161150}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161151}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161152}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161153}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161154}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161155}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161156}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161157}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161158}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161159}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161160}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161161}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161162}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161163}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161164}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161165}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161166}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161167}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161168}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161169}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161170}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161171}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161172}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161173}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161174}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161175}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161176}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161177}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161178}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161179}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161180}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161181}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161182}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161183}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161184}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161185}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161186}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161187}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161188}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161189}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161190}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161191}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161192}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161193}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161194}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161195}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161196}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161197}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161198}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161199}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161200}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161201}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161202}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161203}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161204}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161205}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161206}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161207}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161208}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161209}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161210}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161211}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161212}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161213}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161214}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161215}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161216}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161217}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161218}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161219}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161220}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161221}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161222}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161223}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161224}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161225}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161226}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161227}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161228}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161229}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161230}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161231}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161232}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161233}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161234}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161235}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161236}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161237}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161238}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161239}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161240}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161241}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161242}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161243}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161244}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161245}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161246}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161247}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161248}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161249}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161250}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161251}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161252}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161253}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161254}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161255}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161256}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161257}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161258}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161259}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161260}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161261}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161262}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161263}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161264}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161265}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161266}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161267}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161268}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161269}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161270}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161271}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161272}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161273}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161274}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161275}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161276}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161277}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161278}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161279}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161280}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161281}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161282}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161283}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161284}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161285}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161286}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161287}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161288}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161289}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161290}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161291}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161292}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161293}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161294}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161295}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161296}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161297}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161298}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161299}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161300}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161301}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161302}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161303}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161304}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161305}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161306}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161307}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161308}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161309}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161310}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161311}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161312}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161313}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161314}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161315}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161316}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161317}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161318}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161319}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161320}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161321}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161322}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161323}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161324}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161325}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161326}}{a factor with levels \code{A} \code{C}}
-    \item{\code{SNP161327}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161328}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161329}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161330}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161331}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161332}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161333}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161334}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161335}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161336}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161337}}{a factor with levels \code{G} \code{T}}
-    \item{\code{SNP161338}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161339}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161340}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161341}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161342}}{a factor with levels \code{C} \code{T}}
-    \item{\code{SNP161343}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161344}}{a factor with levels \code{C} \code{G}}
-    \item{\code{SNP161345}}{a factor with levels \code{A} \code{G}}
-    \item{\code{SNP161346}}{a factor with levels \code{A} \code{T}}
-    \item{\code{SNP161347}}{a factor with levels \code{A} \code{G}}
+    \item{\code{SNP1}}{a character vector}
+    \item{\code{SNP2}}{a character vector}
+    \item{\code{SNP3}}{a character vector}
+    \item{\code{SNP4}}{a character vector}
+    \item{\code{SNP5}}{a character vector}
+    \item{\code{SNP6}}{a character vector}
+    \item{\code{SNP7}}{a character vector}
+    \item{\code{SNP8}}{a character vector}
+    \item{\code{SNP9}}{a character vector}
+    \item{\code{SNP10}}{a character vector}
+    \item{\code{SNP11}}{a character vector}
+    \item{\code{SNP12}}{a character vector}
+    \item{\code{SNP13}}{a character vector}
+    \item{\code{SNP14}}{a character vector}
+    \item{\code{SNP15}}{a character vector}
+    \item{\code{SNP16}}{a character vector}
+    \item{\code{SNP17}}{a character vector}
+    \item{\code{SNP18}}{a character vector}
+    \item{\code{SNP19}}{a character vector}
+    \item{\code{SNP20}}{a character vector}
+    \item{\code{SNP21}}{a character vector}
+    \item{\code{SNP22}}{a character vector}
+    \item{\code{SNP23}}{a character vector}
+    \item{\code{SNP24}}{a character vector}
+    \item{\code{SNP25}}{a character vector}
+    \item{\code{SNP26}}{a character vector}
+    \item{\code{SNP27}}{a character vector}
+    \item{\code{SNP28}}{a character vector}
+    \item{\code{SNP29}}{a character vector}
+    \item{\code{SNP30}}{a character vector}
+    \item{\code{SNP31}}{a character vector}
+    \item{\code{SNP32}}{a character vector}
+    \item{\code{SNP33}}{a character vector}
+    \item{\code{SNP34}}{a character vector}
+    \item{\code{SNP35}}{a character vector}
+    \item{\code{SNP36}}{a character vector}
+    \item{\code{SNP37}}{a character vector}
+    \item{\code{SNP38}}{a character vector}
+    \item{\code{SNP39}}{a character vector}
+    \item{\code{SNP40}}{a character vector}
+    \item{\code{SNP41}}{a character vector}
+    \item{\code{SNP42}}{a character vector}
+    \item{\code{SNP43}}{a character vector}
+    \item{\code{SNP44}}{a character vector}
+    \item{\code{SNP45}}{a character vector}
+    \item{\code{SNP46}}{a character vector}
+    \item{\code{SNP47}}{a character vector}
+    \item{\code{SNP48}}{a character vector}
+    \item{\code{SNP49}}{a character vector}
+    \item{\code{SNP50}}{a character vector}
+    \item{\code{SNP51}}{a character vector}
+    \item{\code{SNP52}}{a character vector}
+    \item{\code{SNP53}}{a character vector}
+    \item{\code{SNP54}}{a character vector}
+    \item{\code{SNP55}}{a character vector}
+    \item{\code{SNP56}}{a character vector}
+    \item{\code{SNP57}}{a character vector}
+    \item{\code{SNP58}}{a character vector}
+    \item{\code{SNP59}}{a character vector}
+    \item{\code{SNP60}}{a character vector}
+    \item{\code{SNP61}}{a character vector}
+    \item{\code{SNP62}}{a character vector}
+    \item{\code{SNP63}}{a character vector}
+    \item{\code{SNP64}}{a character vector}
+    \item{\code{SNP65}}{a character vector}
+    \item{\code{SNP66}}{a character vector}
+    \item{\code{SNP67}}{a character vector}
+    \item{\code{SNP68}}{a character vector}
+    \item{\code{SNP69}}{a character vector}
+    \item{\code{SNP70}}{a character vector}
+    \item{\code{SNP71}}{a character vector}
+    \item{\code{SNP72}}{a character vector}
+    \item{\code{SNP73}}{a character vector}
+    \item{\code{SNP74}}{a character vector}
+    \item{\code{SNP75}}{a character vector}
+    \item{\code{SNP76}}{a character vector}
+    \item{\code{SNP77}}{a character vector}
+    \item{\code{SNP78}}{a character vector}
+    \item{\code{SNP79}}{a character vector}
+    \item{\code{SNP80}}{a character vector}
+    \item{\code{SNP81}}{a character vector}
+    \item{\code{SNP82}}{a character vector}
+    \item{\code{SNP83}}{a character vector}
+    \item{\code{SNP84}}{a character vector}
+    \item{\code{SNP85}}{a character vector}
+    \item{\code{SNP86}}{a character vector}
+    \item{\code{SNP87}}{a character vector}
+    \item{\code{SNP88}}{a character vector}
+    \item{\code{SNP89}}{a character vector}
+    \item{\code{SNP90}}{a character vector}
+    \item{\code{SNP91}}{a character vector}
+    \item{\code{SNP92}}{a character vector}
+    \item{\code{SNP93}}{a character vector}
+    \item{\code{SNP94}}{a character vector}
+    \item{\code{SNP95}}{a character vector}
+    \item{\code{SNP96}}{a character vector}
+    \item{\code{SNP97}}{a character vector}
+    \item{\code{SNP98}}{a character vector}
+    \item{\code{SNP99}}{a character vector}
+    \item{\code{SNP100}}{a character vector}
+    \item{\code{SNP101}}{a character vector}
+    \item{\code{SNP102}}{a character vector}
+    \item{\code{SNP103}}{a character vector}
+    \item{\code{SNP104}}{a character vector}
+    \item{\code{SNP105}}{a character vector}
+    \item{\code{SNP106}}{a character vector}
+    \item{\code{SNP107}}{a character vector}
+    \item{\code{SNP108}}{a character vector}
+    \item{\code{SNP109}}{a character vector}
+    \item{\code{SNP110}}{a character vector}
+    \item{\code{SNP111}}{a character vector}
+    \item{\code{SNP112}}{a character vector}
+    \item{\code{SNP113}}{a character vector}
+    \item{\code{SNP114}}{a character vector}
+    \item{\code{SNP115}}{a character vector}
+    \item{\code{SNP116}}{a character vector}
+    \item{\code{SNP117}}{a character vector}
+    \item{\code{SNP118}}{a character vector}
+    \item{\code{SNP119}}{a character vector}
+    \item{\code{SNP120}}{a character vector}
+    \item{\code{SNP121}}{a character vector}
+    \item{\code{SNP122}}{a character vector}
+    \item{\code{SNP123}}{a character vector}
+    \item{\code{SNP124}}{a character vector}
+    \item{\code{SNP125}}{a character vector}
+    \item{\code{SNP126}}{a character vector}
+    \item{\code{SNP127}}{a character vector}
+    \item{\code{SNP128}}{a character vector}
+    \item{\code{SNP129}}{a character vector}
+    \item{\code{SNP130}}{a character vector}
+    \item{\code{SNP131}}{a character vector}
+    \item{\code{SNP132}}{a character vector}
+    \item{\code{SNP133}}{a character vector}
+    \item{\code{SNP134}}{a character vector}
+    \item{\code{SNP135}}{a character vector}
+    \item{\code{SNP136}}{a character vector}
+    \item{\code{SNP137}}{a character vector}
+    \item{\code{SNP138}}{a character vector}
+    \item{\code{SNP139}}{a character vector}
+    \item{\code{SNP140}}{a character vector}
+    \item{\code{SNP141}}{a character vector}
+    \item{\code{SNP142}}{a character vector}
+    \item{\code{SNP143}}{a character vector}
+    \item{\code{SNP144}}{a character vector}
+    \item{\code{SNP145}}{a character vector}
+    \item{\code{SNP146}}{a character vector}
+    \item{\code{SNP147}}{a character vector}
+    \item{\code{SNP148}}{a character vector}
+    \item{\code{SNP149}}{a character vector}
+    \item{\code{SNP150}}{a character vector}
+    \item{\code{SNP151}}{a character vector}
+    \item{\code{SNP152}}{a character vector}
+    \item{\code{SNP153}}{a character vector}
+    \item{\code{SNP154}}{a character vector}
+    \item{\code{SNP155}}{a character vector}
+    \item{\code{SNP156}}{a character vector}
+    \item{\code{SNP157}}{a character vector}
+    \item{\code{SNP158}}{a character vector}
+    \item{\code{SNP159}}{a character vector}
+    \item{\code{SNP160}}{a character vector}
+    \item{\code{SNP161}}{a character vector}
+    \item{\code{SNP162}}{a character vector}
+    \item{\code{SNP163}}{a character vector}
+    \item{\code{SNP164}}{a character vector}
+    \item{\code{SNP165}}{a character vector}
+    \item{\code{SNP166}}{a character vector}
+    \item{\code{SNP167}}{a character vector}
+    \item{\code{SNP168}}{a character vector}
+    \item{\code{SNP169}}{a character vector}
+    \item{\code{SNP170}}{a character vector}
+    \item{\code{SNP171}}{a character vector}
+    \item{\code{SNP172}}{a character vector}
+    \item{\code{SNP173}}{a character vector}
+    \item{\code{SNP174}}{a character vector}
+    \item{\code{SNP175}}{a character vector}
+    \item{\code{SNP176}}{a character vector}
+    \item{\code{SNP177}}{a character vector}
+    \item{\code{SNP178}}{a character vector}
+    \item{\code{SNP179}}{a character vector}
+    \item{\code{SNP180}}{a character vector}
+    \item{\code{SNP181}}{a character vector}
+    \item{\code{SNP182}}{a character vector}
+    \item{\code{SNP183}}{a character vector}
+    \item{\code{SNP184}}{a character vector}
+    \item{\code{SNP185}}{a character vector}
+    \item{\code{SNP186}}{a character vector}
+    \item{\code{SNP187}}{a character vector}
+    \item{\code{SNP188}}{a character vector}
+    \item{\code{SNP189}}{a character vector}
+    \item{\code{SNP190}}{a character vector}
+    \item{\code{SNP191}}{a character vector}
+    \item{\code{SNP192}}{a character vector}
+    \item{\code{SNP193}}{a character vector}
+    \item{\code{SNP194}}{a character vector}
+    \item{\code{SNP195}}{a character vector}
+    \item{\code{SNP196}}{a character vector}
+    \item{\code{SNP197}}{a character vector}
+    \item{\code{SNP198}}{a character vector}
+    \item{\code{SNP199}}{a character vector}
+    \item{\code{SNP200}}{a character vector}
+    \item{\code{SNP201}}{a character vector}
+    \item{\code{SNP202}}{a character vector}
+    \item{\code{SNP203}}{a character vector}
+    \item{\code{SNP204}}{a character vector}
+    \item{\code{SNP205}}{a character vector}
+    \item{\code{SNP206}}{a character vector}
+    \item{\code{SNP207}}{a character vector}
+    \item{\code{SNP208}}{a character vector}
+    \item{\code{SNP209}}{a character vector}
+    \item{\code{SNP210}}{a character vector}
+    \item{\code{SNP211}}{a character vector}
+    \item{\code{SNP212}}{a character vector}
+    \item{\code{SNP213}}{a character vector}
+    \item{\code{SNP214}}{a character vector}
+    \item{\code{SNP215}}{a character vector}
+    \item{\code{SNP216}}{a character vector}
+    \item{\code{SNP217}}{a character vector}
+    \item{\code{SNP218}}{a character vector}
+    \item{\code{SNP219}}{a character vector}
+    \item{\code{SNP220}}{a character vector}
+    \item{\code{SNP221}}{a character vector}
+    \item{\code{SNP222}}{a character vector}
+    \item{\code{SNP223}}{a character vector}
+    \item{\code{SNP224}}{a character vector}
+    \item{\code{SNP225}}{a character vector}
+    \item{\code{SNP226}}{a character vector}
+    \item{\code{SNP227}}{a character vector}
+    \item{\code{SNP228}}{a character vector}
+    \item{\code{SNP229}}{a character vector}
+    \item{\code{SNP230}}{a character vector}
+    \item{\code{SNP231}}{a character vector}
+    \item{\code{SNP232}}{a character vector}
+    \item{\code{SNP233}}{a character vector}
+    \item{\code{SNP234}}{a character vector}
+    \item{\code{SNP235}}{a character vector}
+    \item{\code{SNP236}}{a character vector}
+    \item{\code{SNP237}}{a character vector}
+    \item{\code{SNP238}}{a character vector}
+    \item{\code{SNP239}}{a character vector}
+    \item{\code{SNP240}}{a character vector}
+    \item{\code{SNP241}}{a character vector}
+    \item{\code{SNP242}}{a character vector}
+    \item{\code{SNP243}}{a character vector}
+    \item{\code{SNP244}}{a character vector}
+    \item{\code{SNP245}}{a character vector}
+    \item{\code{SNP246}}{a character vector}
+    \item{\code{SNP247}}{a character vector}
+    \item{\code{SNP248}}{a character vector}
+    \item{\code{SNP249}}{a character vector}
+    \item{\code{SNP250}}{a character vector}
+    \item{\code{SNP251}}{a character vector}
+    \item{\code{SNP252}}{a character vector}
+    \item{\code{SNP253}}{a character vector}
+    \item{\code{SNP254}}{a character vector}
+    \item{\code{SNP255}}{a character vector}
+    \item{\code{SNP256}}{a character vector}
+    \item{\code{SNP257}}{a character vector}
+    \item{\code{SNP258}}{a character vector}
+    \item{\code{SNP259}}{a character vector}
+    \item{\code{SNP260}}{a character vector}
+    \item{\code{SNP261}}{a character vector}
+    \item{\code{SNP262}}{a character vector}
+    \item{\code{SNP263}}{a character vector}
+    \item{\code{SNP264}}{a character vector}
+    \item{\code{SNP265}}{a character vector}
+    \item{\code{SNP266}}{a character vector}
+    \item{\code{SNP267}}{a character vector}
+    \item{\code{SNP268}}{a character vector}
+    \item{\code{SNP269}}{a character vector}
+    \item{\code{SNP270}}{a character vector}
+    \item{\code{SNP271}}{a character vector}
+    \item{\code{SNP272}}{a character vector}
+    \item{\code{SNP273}}{a character vector}
+    \item{\code{SNP274}}{a character vector}
+    \item{\code{SNP275}}{a character vector}
+    \item{\code{SNP276}}{a character vector}
+    \item{\code{SNP277}}{a character vector}
+    \item{\code{SNP278}}{a character vector}
+    \item{\code{SNP279}}{a character vector}
+    \item{\code{SNP280}}{a character vector}
+    \item{\code{SNP281}}{a character vector}
+    \item{\code{SNP282}}{a character vector}
+    \item{\code{SNP283}}{a character vector}
+    \item{\code{SNP284}}{a character vector}
+    \item{\code{SNP285}}{a character vector}
+    \item{\code{SNP286}}{a character vector}
+    \item{\code{SNP287}}{a character vector}
+    \item{\code{SNP288}}{a character vector}
+    \item{\code{SNP289}}{a character vector}
+    \item{\code{SNP290}}{a character vector}
+    \item{\code{SNP291}}{a character vector}
+    \item{\code{SNP292}}{a character vector}
+    \item{\code{SNP293}}{a character vector}
+    \item{\code{SNP294}}{a character vector}
+    \item{\code{SNP295}}{a character vector}
+    \item{\code{SNP296}}{a character vector}
+    \item{\code{SNP297}}{a character vector}
+    \item{\code{SNP298}}{a character vector}
+    \item{\code{SNP299}}{a character vector}
+    \item{\code{SNP300}}{a character vector}
+    \item{\code{SNP301}}{a character vector}
+    \item{\code{SNP302}}{a character vector}
+    \item{\code{SNP303}}{a character vector}
+    \item{\code{SNP304}}{a character vector}
+    \item{\code{SNP305}}{a character vector}
+    \item{\code{SNP306}}{a character vector}
+    \item{\code{SNP307}}{a character vector}
+    \item{\code{SNP308}}{a character vector}
+    \item{\code{SNP309}}{a character vector}
+    \item{\code{SNP310}}{a character vector}
+    \item{\code{SNP311}}{a character vector}
+    \item{\code{SNP312}}{a character vector}
+    \item{\code{SNP313}}{a character vector}
+    \item{\code{SNP314}}{a character vector}
+    \item{\code{SNP315}}{a character vector}
+    \item{\code{SNP316}}{a character vector}
+    \item{\code{SNP317}}{a character vector}
+    \item{\code{SNP318}}{a character vector}
+    \item{\code{SNP319}}{a character vector}
+    \item{\code{SNP320}}{a character vector}
+    \item{\code{SNP321}}{a character vector}
+    \item{\code{SNP322}}{a character vector}
+    \item{\code{SNP323}}{a character vector}
+    \item{\code{SNP324}}{a character vector}
+    \item{\code{SNP325}}{a character vector}
+    \item{\code{SNP326}}{a character vector}
+    \item{\code{SNP327}}{a character vector}
+    \item{\code{SNP328}}{a character vector}
+    \item{\code{SNP329}}{a character vector}
+    \item{\code{SNP330}}{a character vector}
+    \item{\code{SNP331}}{a character vector}
+    \item{\code{SNP332}}{a character vector}
+    \item{\code{SNP333}}{a character vector}
+    \item{\code{SNP334}}{a character vector}
+    \item{\code{SNP335}}{a character vector}
+    \item{\code{SNP336}}{a character vector}
+    \item{\code{SNP337}}{a character vector}
+    \item{\code{SNP338}}{a character vector}
+    \item{\code{SNP339}}{a character vector}
+    \item{\code{SNP340}}{a character vector}
+    \item{\code{SNP341}}{a character vector}
+    \item{\code{SNP342}}{a character vector}
+    \item{\code{SNP343}}{a character vector}
+    \item{\code{SNP344}}{a character vector}
+    \item{\code{SNP345}}{a character vector}
+    \item{\code{SNP346}}{a character vector}
+    \item{\code{SNP347}}{a character vector}
+    \item{\code{SNP348}}{a character vector}
+    \item{\code{SNP349}}{a character vector}
+    \item{\code{SNP350}}{a character vector}
+    \item{\code{SNP351}}{a character vector}
+    \item{\code{SNP352}}{a character vector}
+    \item{\code{SNP353}}{a character vector}
+    \item{\code{SNP354}}{a character vector}
+    \item{\code{SNP355}}{a character vector}
+    \item{\code{SNP356}}{a character vector}
+    \item{\code{SNP357}}{a character vector}
+    \item{\code{SNP358}}{a character vector}
+    \item{\code{SNP359}}{a character vector}
+    \item{\code{SNP360}}{a character vector}
+    \item{\code{SNP361}}{a character vector}
+    \item{\code{SNP362}}{a character vector}
+    \item{\code{SNP363}}{a character vector}
+    \item{\code{SNP364}}{a character vector}
+    \item{\code{SNP365}}{a character vector}
+    \item{\code{SNP366}}{a character vector}
+    \item{\code{SNP367}}{a character vector}
+    \item{\code{SNP368}}{a character vector}
+    \item{\code{SNP369}}{a character vector}
+    \item{\code{SNP370}}{a character vector}
+    \item{\code{SNP371}}{a character vector}
+    \item{\code{SNP372}}{a character vector}
+    \item{\code{SNP373}}{a character vector}
+    \item{\code{SNP374}}{a character vector}
+    \item{\code{SNP375}}{a character vector}
+    \item{\code{SNP376}}{a character vector}
+    \item{\code{SNP377}}{a character vector}
+    \item{\code{SNP378}}{a character vector}
+    \item{\code{SNP379}}{a character vector}
+    \item{\code{SNP380}}{a character vector}
+    \item{\code{SNP381}}{a character vector}
+    \item{\code{SNP382}}{a character vector}
+    \item{\code{SNP383}}{a character vector}
+    \item{\code{SNP384}}{a character vector}
+    \item{\code{SNP385}}{a character vector}
+    \item{\code{SNP386}}{a character vector}
+    \item{\code{SNP387}}{a character vector}
+    \item{\code{SNP388}}{a character vector}
+    \item{\code{SNP389}}{a character vector}
+    \item{\code{SNP390}}{a character vector}
+    \item{\code{SNP391}}{a character vector}
+    \item{\code{SNP392}}{a character vector}
+    \item{\code{SNP393}}{a character vector}
+    \item{\code{SNP394}}{a character vector}
+    \item{\code{SNP395}}{a character vector}
+    \item{\code{SNP396}}{a character vector}
+    \item{\code{SNP397}}{a character vector}
+    \item{\code{SNP398}}{a character vector}
+    \item{\code{SNP399}}{a character vector}
+    \item{\code{SNP400}}{a character vector}
+    \item{\code{SNP401}}{a character vector}
+    \item{\code{SNP402}}{a character vector}
+    \item{\code{SNP403}}{a character vector}
+    \item{\code{SNP404}}{a character vector}
+    \item{\code{SNP405}}{a character vector}
+    \item{\code{SNP406}}{a character vector}
+    \item{\code{SNP407}}{a character vector}
+    \item{\code{SNP408}}{a character vector}
+    \item{\code{SNP409}}{a character vector}
+    \item{\code{SNP410}}{a character vector}
+    \item{\code{SNP411}}{a character vector}
+    \item{\code{SNP412}}{a character vector}
+    \item{\code{SNP413}}{a character vector}
+    \item{\code{SNP414}}{a character vector}
+    \item{\code{SNP415}}{a character vector}
+    \item{\code{SNP416}}{a character vector}
+    \item{\code{SNP417}}{a character vector}
+    \item{\code{SNP418}}{a character vector}
+    \item{\code{SNP419}}{a character vector}
+    \item{\code{SNP420}}{a character vector}
+    \item{\code{SNP421}}{a character vector}
+    \item{\code{SNP422}}{a character vector}
+    \item{\code{SNP423}}{a character vector}
+    \item{\code{SNP424}}{a character vector}
+    \item{\code{SNP425}}{a character vector}
+    \item{\code{SNP426}}{a character vector}
+    \item{\code{SNP427}}{a character vector}
+    \item{\code{SNP428}}{a character vector}
+    \item{\code{SNP429}}{a character vector}
+    \item{\code{SNP430}}{a character vector}
+    \item{\code{SNP431}}{a character vector}
+    \item{\code{SNP432}}{a character vector}
+    \item{\code{SNP433}}{a character vector}
+    \item{\code{SNP434}}{a character vector}
+    \item{\code{SNP435}}{a character vector}
+    \item{\code{SNP436}}{a character vector}
+    \item{\code{SNP437}}{a character vector}
+    \item{\code{SNP438}}{a character vector}
+    \item{\code{SNP439}}{a character vector}
+    \item{\code{SNP440}}{a character vector}
+    \item{\code{SNP441}}{a character vector}
+    \item{\code{SNP442}}{a character vector}
+    \item{\code{SNP443}}{a character vector}
+    \item{\code{SNP444}}{a character vector}
+    \item{\code{SNP445}}{a character vector}
+    \item{\code{SNP446}}{a character vector}
+    \item{\code{SNP447}}{a character vector}
+    \item{\code{SNP448}}{a character vector}
+    \item{\code{SNP449}}{a character vector}
+    \item{\code{SNP450}}{a character vector}
+    \item{\code{SNP451}}{a character vector}
+    \item{\code{SNP452}}{a character vector}
+    \item{\code{SNP453}}{a character vector}
+    \item{\code{SNP454}}{a character vector}
+    \item{\code{SNP455}}{a character vector}
+    \item{\code{SNP456}}{a character vector}
+    \item{\code{SNP457}}{a character vector}
+    \item{\code{SNP458}}{a character vector}
+    \item{\code{SNP459}}{a character vector}
+    \item{\code{SNP460}}{a character vector}
+    \item{\code{SNP461}}{a character vector}
+    \item{\code{SNP462}}{a character vector}
+    \item{\code{SNP463}}{a character vector}
+    \item{\code{SNP464}}{a character vector}
+    \item{\code{SNP465}}{a character vector}
+    \item{\code{SNP466}}{a character vector}
+    \item{\code{SNP467}}{a character vector}
+    \item{\code{SNP468}}{a character vector}
+    \item{\code{SNP469}}{a character vector}
+    \item{\code{SNP470}}{a character vector}
+    \item{\code{SNP471}}{a character vector}
+    \item{\code{SNP472}}{a character vector}
+    \item{\code{SNP473}}{a character vector}
+    \item{\code{SNP474}}{a character vector}
+    \item{\code{SNP475}}{a character vector}
+    \item{\code{SNP476}}{a character vector}
+    \item{\code{SNP477}}{a character vector}
+    \item{\code{SNP478}}{a character vector}
+    \item{\code{SNP479}}{a character vector}
+    \item{\code{SNP480}}{a character vector}
+    \item{\code{SNP481}}{a character vector}
+    \item{\code{SNP482}}{a character vector}
+    \item{\code{SNP483}}{a character vector}
+    \item{\code{SNP484}}{a character vector}
+    \item{\code{SNP485}}{a character vector}
+    \item{\code{SNP486}}{a character vector}
+    \item{\code{SNP487}}{a character vector}
+    \item{\code{SNP488}}{a character vector}
+    \item{\code{SNP489}}{a character vector}
+    \item{\code{SNP490}}{a character vector}
+    \item{\code{SNP491}}{a character vector}
+    \item{\code{SNP492}}{a character vector}
+    \item{\code{SNP493}}{a character vector}
+    \item{\code{SNP494}}{a character vector}
+    \item{\code{SNP495}}{a character vector}
+    \item{\code{SNP496}}{a character vector}
+    \item{\code{SNP497}}{a character vector}
+    \item{\code{SNP498}}{a character vector}
+    \item{\code{SNP499}}{a character vector}
+    \item{\code{SNP500}}{a character vector}
+    \item{\code{SNP501}}{a character vector}
+    \item{\code{SNP502}}{a character vector}
+    \item{\code{SNP503}}{a character vector}
+    \item{\code{SNP504}}{a character vector}
+    \item{\code{SNP505}}{a character vector}
+    \item{\code{SNP506}}{a character vector}
+    \item{\code{SNP507}}{a character vector}
+    \item{\code{SNP508}}{a character vector}
+    \item{\code{SNP509}}{a character vector}
+    \item{\code{SNP510}}{a character vector}
+    \item{\code{SNP511}}{a character vector}
+    \item{\code{SNP512}}{a character vector}
+    \item{\code{SNP513}}{a character vector}
+    \item{\code{SNP514}}{a character vector}
+    \item{\code{SNP515}}{a character vector}
+    \item{\code{SNP516}}{a character vector}
+    \item{\code{SNP517}}{a character vector}
+    \item{\code{SNP518}}{a character vector}
+    \item{\code{SNP519}}{a character vector}
+    \item{\code{SNP520}}{a character vector}
+    \item{\code{SNP521}}{a character vector}
+    \item{\code{SNP522}}{a character vector}
+    \item{\code{SNP523}}{a character vector}
+    \item{\code{SNP524}}{a character vector}
+    \item{\code{SNP525}}{a character vector}
+    \item{\code{SNP526}}{a character vector}
+    \item{\code{SNP527}}{a character vector}
+    \item{\code{SNP528}}{a character vector}
+    \item{\code{SNP529}}{a character vector}
+    \item{\code{SNP530}}{a character vector}
+    \item{\code{SNP531}}{a character vector}
+    \item{\code{SNP532}}{a character vector}
+    \item{\code{SNP533}}{a character vector}
+    \item{\code{SNP534}}{a character vector}
+    \item{\code{SNP535}}{a character vector}
+    \item{\code{SNP536}}{a character vector}
+    \item{\code{SNP537}}{a character vector}
+    \item{\code{SNP538}}{a character vector}
+    \item{\code{SNP539}}{a character vector}
+    \item{\code{SNP540}}{a character vector}
+    \item{\code{SNP541}}{a character vector}
+    \item{\code{SNP542}}{a character vector}
+    \item{\code{SNP543}}{a character vector}
+    \item{\code{SNP544}}{a character vector}
+    \item{\code{SNP545}}{a character vector}
+    \item{\code{SNP546}}{a character vector}
+    \item{\code{SNP547}}{a character vector}
+    \item{\code{SNP548}}{a character vector}
+    \item{\code{SNP549}}{a character vector}
+    \item{\code{SNP550}}{a character vector}
+    \item{\code{SNP551}}{a character vector}
+    \item{\code{SNP552}}{a character vector}
+    \item{\code{SNP553}}{a character vector}
+    \item{\code{SNP554}}{a character vector}
+    \item{\code{SNP555}}{a character vector}
+    \item{\code{SNP556}}{a character vector}
+    \item{\code{SNP557}}{a character vector}
+    \item{\code{SNP558}}{a character vector}
+    \item{\code{SNP559}}{a character vector}
+    \item{\code{SNP560}}{a character vector}
+    \item{\code{SNP561}}{a character vector}
+    \item{\code{SNP562}}{a character vector}
+    \item{\code{SNP563}}{a character vector}
+    \item{\code{SNP564}}{a character vector}
+    \item{\code{SNP565}}{a character vector}
+    \item{\code{SNP566}}{a character vector}
+    \item{\code{SNP567}}{a character vector}
+    \item{\code{SNP568}}{a character vector}
+    \item{\code{SNP569}}{a character vector}
+    \item{\code{SNP570}}{a character vector}
+    \item{\code{SNP571}}{a character vector}
+    \item{\code{SNP572}}{a character vector}
+    \item{\code{SNP573}}{a character vector}
+    \item{\code{SNP574}}{a character vector}
+    \item{\code{SNP575}}{a character vector}
+    \item{\code{SNP576}}{a character vector}
+    \item{\code{SNP577}}{a character vector}
+    \item{\code{SNP578}}{a character vector}
+    \item{\code{SNP579}}{a character vector}
+    \item{\code{SNP580}}{a character vector}
+    \item{\code{SNP581}}{a character vector}
+    \item{\code{SNP582}}{a character vector}
+    \item{\code{SNP583}}{a character vector}
+    \item{\code{SNP584}}{a character vector}
+    \item{\code{SNP585}}{a character vector}
+    \item{\code{SNP586}}{a character vector}
+    \item{\code{SNP587}}{a character vector}
+    \item{\code{SNP588}}{a character vector}
+    \item{\code{SNP589}}{a character vector}
+    \item{\code{SNP590}}{a character vector}
+    \item{\code{SNP591}}{a character vector}
+    \item{\code{SNP592}}{a character vector}
+    \item{\code{SNP593}}{a character vector}
+    \item{\code{SNP594}}{a character vector}
+    \item{\code{SNP595}}{a character vector}
+    \item{\code{SNP596}}{a character vector}
+    \item{\code{SNP597}}{a character vector}
+    \item{\code{SNP598}}{a character vector}
+    \item{\code{SNP599}}{a character vector}
+    \item{\code{SNP600}}{a character vector}
+    \item{\code{SNP601}}{a character vector}
+    \item{\code{SNP602}}{a character vector}
+    \item{\code{SNP603}}{a character vector}
+    \item{\code{SNP604}}{a character vector}
+    \item{\code{SNP605}}{a character vector}
+    \item{\code{SNP606}}{a character vector}
+    \item{\code{SNP607}}{a character vector}
+    \item{\code{SNP608}}{a character vector}
+    \item{\code{SNP609}}{a character vector}
+    \item{\code{SNP610}}{a character vector}
+    \item{\code{SNP611}}{a character vector}
+    \item{\code{SNP612}}{a character vector}
+    \item{\code{SNP613}}{a character vector}
+    \item{\code{SNP614}}{a character vector}
+    \item{\code{SNP615}}{a character vector}
+    \item{\code{SNP616}}{a character vector}
+    \item{\code{SNP617}}{a character vector}
+    \item{\code{SNP618}}{a character vector}
+    \item{\code{SNP619}}{a character vector}
+    \item{\code{SNP620}}{a character vector}
+    \item{\code{SNP621}}{a character vector}
+    \item{\code{SNP622}}{a character vector}
+    \item{\code{SNP623}}{a character vector}
+    \item{\code{SNP624}}{a character vector}
+    \item{\code{SNP625}}{a character vector}
+    \item{\code{SNP626}}{a character vector}
+    \item{\code{SNP627}}{a character vector}
+    \item{\code{SNP628}}{a character vector}
+    \item{\code{SNP629}}{a character vector}
+    \item{\code{SNP630}}{a character vector}
+    \item{\code{SNP631}}{a character vector}
+    \item{\code{SNP632}}{a character vector}
+    \item{\code{SNP633}}{a character vector}
+    \item{\code{SNP634}}{a character vector}
+    \item{\code{SNP635}}{a character vector}
+    \item{\code{SNP636}}{a character vector}
+    \item{\code{SNP637}}{a character vector}
+    \item{\code{SNP638}}{a character vector}
+    \item{\code{SNP639}}{a character vector}
+    \item{\code{SNP640}}{a character vector}
+    \item{\code{SNP641}}{a character vector}
+    \item{\code{SNP642}}{a character vector}
+    \item{\code{SNP643}}{a character vector}
+    \item{\code{SNP644}}{a character vector}
+    \item{\code{SNP645}}{a character vector}
+    \item{\code{SNP646}}{a character vector}
+    \item{\code{SNP647}}{a character vector}
+    \item{\code{SNP648}}{a character vector}
+    \item{\code{SNP649}}{a character vector}
+    \item{\code{SNP650}}{a character vector}
+    \item{\code{SNP651}}{a character vector}
+    \item{\code{SNP652}}{a character vector}
+    \item{\code{SNP653}}{a character vector}
+    \item{\code{SNP654}}{a character vector}
+    \item{\code{SNP655}}{a character vector}
+    \item{\code{SNP656}}{a character vector}
+    \item{\code{SNP657}}{a character vector}
+    \item{\code{SNP658}}{a character vector}
+    \item{\code{SNP659}}{a character vector}
+    \item{\code{SNP660}}{a character vector}
+    \item{\code{SNP661}}{a character vector}
+    \item{\code{SNP662}}{a character vector}
+    \item{\code{SNP663}}{a character vector}
+    \item{\code{SNP664}}{a character vector}
+    \item{\code{SNP665}}{a character vector}
+    \item{\code{SNP666}}{a character vector}
+    \item{\code{SNP667}}{a character vector}
+    \item{\code{SNP668}}{a character vector}
+    \item{\code{SNP669}}{a character vector}
+    \item{\code{SNP670}}{a character vector}
+    \item{\code{SNP671}}{a character vector}
+    \item{\code{SNP672}}{a character vector}
+    \item{\code{SNP673}}{a character vector}
+    \item{\code{SNP674}}{a character vector}
+    \item{\code{SNP675}}{a character vector}
+    \item{\code{SNP676}}{a character vector}
+    \item{\code{SNP677}}{a character vector}
+    \item{\code{SNP678}}{a character vector}
+    \item{\code{SNP679}}{a character vector}
+    \item{\code{SNP680}}{a character vector}
+    \item{\code{SNP681}}{a character vector}
+    \item{\code{SNP682}}{a character vector}
+    \item{\code{SNP683}}{a character vector}
+    \item{\code{SNP684}}{a character vector}
+    \item{\code{SNP685}}{a character vector}
+    \item{\code{SNP686}}{a character vector}
+    \item{\code{SNP687}}{a character vector}
+    \item{\code{SNP688}}{a character vector}
+    \item{\code{SNP689}}{a character vector}
+    \item{\code{SNP690}}{a character vector}
+    \item{\code{SNP691}}{a character vector}
+    \item{\code{SNP692}}{a character vector}
+    \item{\code{SNP693}}{a character vector}
+    \item{\code{SNP694}}{a character vector}
+    \item{\code{SNP695}}{a character vector}
+    \item{\code{SNP696}}{a character vector}
+    \item{\code{SNP697}}{a character vector}
+    \item{\code{SNP698}}{a character vector}
+    \item{\code{SNP699}}{a character vector}
+    \item{\code{SNP700}}{a character vector}
+    \item{\code{SNP701}}{a character vector}
+    \item{\code{SNP702}}{a character vector}
+    \item{\code{SNP703}}{a character vector}
+    \item{\code{SNP704}}{a character vector}
+    \item{\code{SNP705}}{a character vector}
+    \item{\code{SNP706}}{a character vector}
+    \item{\code{SNP707}}{a character vector}
+    \item{\code{SNP708}}{a character vector}
+    \item{\code{SNP709}}{a character vector}
+    \item{\code{SNP710}}{a character vector}
+    \item{\code{SNP711}}{a character vector}
+    \item{\code{SNP712}}{a character vector}
+    \item{\code{SNP713}}{a character vector}
+    \item{\code{SNP714}}{a character vector}
+    \item{\code{SNP715}}{a character vector}
+    \item{\code{SNP716}}{a character vector}
+    \item{\code{SNP717}}{a character vector}
+    \item{\code{SNP718}}{a character vector}
+    \item{\code{SNP719}}{a character vector}
+    \item{\code{SNP720}}{a character vector}
+    \item{\code{SNP721}}{a character vector}
+    \item{\code{SNP722}}{a character vector}
+    \item{\code{SNP723}}{a character vector}
+    \item{\code{SNP724}}{a character vector}
+    \item{\code{SNP725}}{a character vector}
+    \item{\code{SNP726}}{a character vector}
+    \item{\code{SNP727}}{a character vector}
+    \item{\code{SNP728}}{a character vector}
+    \item{\code{SNP729}}{a character vector}
+    \item{\code{SNP730}}{a character vector}
+    \item{\code{SNP731}}{a character vector}
+    \item{\code{SNP732}}{a character vector}
+    \item{\code{SNP733}}{a character vector}
+    \item{\code{SNP734}}{a character vector}
+    \item{\code{SNP735}}{a character vector}
+    \item{\code{SNP736}}{a character vector}
+    \item{\code{SNP737}}{a character vector}
+    \item{\code{SNP738}}{a character vector}
+    \item{\code{SNP739}}{a character vector}
+    \item{\code{SNP740}}{a character vector}
+    \item{\code{SNP741}}{a character vector}
+    \item{\code{SNP742}}{a character vector}
+    \item{\code{SNP743}}{a character vector}
+    \item{\code{SNP744}}{a character vector}
+    \item{\code{SNP745}}{a character vector}
+    \item{\code{SNP746}}{a character vector}
+    \item{\code{SNP747}}{a character vector}
+    \item{\code{SNP748}}{a character vector}
+    \item{\code{SNP749}}{a character vector}
+    \item{\code{SNP750}}{a character vector}
+    \item{\code{SNP751}}{a character vector}
+    \item{\code{SNP752}}{a character vector}
+    \item{\code{SNP753}}{a character vector}
+    \item{\code{SNP754}}{a character vector}
+    \item{\code{SNP755}}{a character vector}
+    \item{\code{SNP756}}{a character vector}
+    \item{\code{SNP757}}{a character vector}
+    \item{\code{SNP758}}{a character vector}
+    \item{\code{SNP759}}{a character vector}
+    \item{\code{SNP760}}{a character vector}
+    \item{\code{SNP761}}{a character vector}
+    \item{\code{SNP762}}{a character vector}
+    \item{\code{SNP763}}{a character vector}
+    \item{\code{SNP764}}{a character vector}
+    \item{\code{SNP765}}{a character vector}
+    \item{\code{SNP766}}{a character vector}
+    \item{\code{SNP767}}{a character vector}
+    \item{\code{SNP768}}{a character vector}
+    \item{\code{SNP769}}{a character vector}
+    \item{\code{SNP770}}{a character vector}
+    \item{\code{SNP771}}{a character vector}
+    \item{\code{SNP772}}{a character vector}
+    \item{\code{SNP773}}{a character vector}
+    \item{\code{SNP774}}{a character vector}
+    \item{\code{SNP775}}{a character vector}
+    \item{\code{SNP776}}{a character vector}
+    \item{\code{SNP777}}{a character vector}
+    \item{\code{SNP778}}{a character vector}
+    \item{\code{SNP779}}{a character vector}
+    \item{\code{SNP780}}{a character vector}
+    \item{\code{SNP781}}{a character vector}
+    \item{\code{SNP782}}{a character vector}
+    \item{\code{SNP783}}{a character vector}
+    \item{\code{SNP784}}{a character vector}
+    \item{\code{SNP785}}{a character vector}
+    \item{\code{SNP786}}{a character vector}
+    \item{\code{SNP787}}{a character vector}
+    \item{\code{SNP788}}{a character vector}
+    \item{\code{SNP789}}{a character vector}
+    \item{\code{SNP790}}{a character vector}
+    \item{\code{SNP791}}{a character vector}
+    \item{\code{SNP792}}{a character vector}
+    \item{\code{SNP793}}{a character vector}
+    \item{\code{SNP794}}{a character vector}
+    \item{\code{SNP795}}{a character vector}
+    \item{\code{SNP796}}{a character vector}
+    \item{\code{SNP797}}{a character vector}
+    \item{\code{SNP798}}{a character vector}
+    \item{\code{SNP799}}{a character vector}
+    \item{\code{SNP800}}{a character vector}
+    \item{\code{SNP801}}{a character vector}
+    \item{\code{SNP802}}{a character vector}
+    \item{\code{SNP803}}{a character vector}
+    \item{\code{SNP804}}{a character vector}
+    \item{\code{SNP805}}{a character vector}
+    \item{\code{SNP806}}{a character vector}
+    \item{\code{SNP807}}{a character vector}
+    \item{\code{SNP808}}{a character vector}
+    \item{\code{SNP809}}{a character vector}
+    \item{\code{SNP810}}{a character vector}
+    \item{\code{SNP811}}{a character vector}
+    \item{\code{SNP812}}{a character vector}
+    \item{\code{SNP813}}{a character vector}
+    \item{\code{SNP814}}{a character vector}
+    \item{\code{SNP815}}{a character vector}
+    \item{\code{SNP816}}{a character vector}
+    \item{\code{SNP817}}{a character vector}
+    \item{\code{SNP818}}{a character vector}
+    \item{\code{SNP819}}{a character vector}
+    \item{\code{SNP820}}{a character vector}
+    \item{\code{SNP821}}{a character vector}
+    \item{\code{SNP822}}{a character vector}
+    \item{\code{SNP823}}{a character vector}
+    \item{\code{SNP824}}{a character vector}
+    \item{\code{SNP825}}{a character vector}
+    \item{\code{SNP826}}{a character vector}
+    \item{\code{SNP827}}{a character vector}
+    \item{\code{SNP828}}{a character vector}
+    \item{\code{SNP829}}{a character vector}
+    \item{\code{SNP830}}{a character vector}
+    \item{\code{SNP831}}{a character vector}
+    \item{\code{SNP832}}{a character vector}
+    \item{\code{SNP833}}{a character vector}
+    \item{\code{SNP834}}{a character vector}
+    \item{\code{SNP835}}{a character vector}
+    \item{\code{SNP836}}{a character vector}
+    \item{\code{SNP837}}{a character vector}
+    \item{\code{SNP838}}{a character vector}
+    \item{\code{SNP839}}{a character vector}
+    \item{\code{SNP840}}{a character vector}
+    \item{\code{SNP841}}{a character vector}
+    \item{\code{SNP842}}{a character vector}
+    \item{\code{SNP843}}{a character vector}
+    \item{\code{SNP844}}{a character vector}
+    \item{\code{SNP845}}{a character vector}
+    \item{\code{SNP846}}{a character vector}
+    \item{\code{SNP847}}{a character vector}
+    \item{\code{SNP848}}{a character vector}
+    \item{\code{SNP849}}{a character vector}
+    \item{\code{SNP850}}{a character vector}
+    \item{\code{SNP851}}{a character vector}
+    \item{\code{SNP852}}{a character vector}
+    \item{\code{SNP853}}{a character vector}
+    \item{\code{SNP854}}{a character vector}
+    \item{\code{SNP855}}{a character vector}
+    \item{\code{SNP856}}{a character vector}
+    \item{\code{SNP857}}{a character vector}
+    \item{\code{SNP858}}{a character vector}
+    \item{\code{SNP859}}{a character vector}
+    \item{\code{SNP860}}{a character vector}
+    \item{\code{SNP861}}{a character vector}
+    \item{\code{SNP862}}{a character vector}
+    \item{\code{SNP863}}{a character vector}
+    \item{\code{SNP864}}{a character vector}
+    \item{\code{SNP865}}{a character vector}
+    \item{\code{SNP866}}{a character vector}
+    \item{\code{SNP867}}{a character vector}
+    \item{\code{SNP868}}{a character vector}
+    \item{\code{SNP869}}{a character vector}
+    \item{\code{SNP870}}{a character vector}
+    \item{\code{SNP871}}{a character vector}
+    \item{\code{SNP872}}{a character vector}
+    \item{\code{SNP873}}{a character vector}
+    \item{\code{SNP874}}{a character vector}
+    \item{\code{SNP875}}{a character vector}
+    \item{\code{SNP876}}{a character vector}
+    \item{\code{SNP877}}{a character vector}
+    \item{\code{SNP878}}{a character vector}
+    \item{\code{SNP879}}{a character vector}
+    \item{\code{SNP880}}{a character vector}
+    \item{\code{SNP881}}{a character vector}
+    \item{\code{SNP882}}{a character vector}
+    \item{\code{SNP883}}{a character vector}
+    \item{\code{SNP884}}{a character vector}
+    \item{\code{SNP885}}{a character vector}
+    \item{\code{SNP886}}{a character vector}
+    \item{\code{SNP887}}{a character vector}
+    \item{\code{SNP888}}{a character vector}
+    \item{\code{SNP889}}{a character vector}
+    \item{\code{SNP890}}{a character vector}
+    \item{\code{SNP891}}{a character vector}
+    \item{\code{SNP892}}{a character vector}
+    \item{\code{SNP893}}{a character vector}
+    \item{\code{SNP894}}{a character vector}
+    \item{\code{SNP895}}{a character vector}
+    \item{\code{SNP896}}{a character vector}
+    \item{\code{SNP897}}{a character vector}
+    \item{\code{SNP898}}{a character vector}
+    \item{\code{SNP899}}{a character vector}
+    \item{\code{SNP900}}{a character vector}
+    \item{\code{SNP901}}{a character vector}
+    \item{\code{SNP902}}{a character vector}
+    \item{\code{SNP903}}{a character vector}
+    \item{\code{SNP904}}{a character vector}
+    \item{\code{SNP905}}{a character vector}
+    \item{\code{SNP906}}{a character vector}
+    \item{\code{SNP907}}{a character vector}
+    \item{\code{SNP908}}{a character vector}
+    \item{\code{SNP909}}{a character vector}
+    \item{\code{SNP910}}{a character vector}
+    \item{\code{SNP911}}{a character vector}
+    \item{\code{SNP912}}{a character vector}
+    \item{\code{SNP913}}{a character vector}
+    \item{\code{SNP914}}{a character vector}
+    \item{\code{SNP915}}{a character vector}
+    \item{\code{SNP916}}{a character vector}
+    \item{\code{SNP917}}{a character vector}
+    \item{\code{SNP918}}{a character vector}
+    \item{\code{SNP919}}{a character vector}
+    \item{\code{SNP920}}{a character vector}
+    \item{\code{SNP921}}{a character vector}
+    \item{\code{SNP922}}{a character vector}
+    \item{\code{SNP923}}{a character vector}
+    \item{\code{SNP924}}{a character vector}
+    \item{\code{SNP925}}{a character vector}
+    \item{\code{SNP926}}{a character vector}
+    \item{\code{SNP927}}{a character vector}
+    \item{\code{SNP928}}{a character vector}
+    \item{\code{SNP929}}{a character vector}
+    \item{\code{SNP930}}{a character vector}
+    \item{\code{SNP931}}{a character vector}
+    \item{\code{SNP932}}{a character vector}
+    \item{\code{SNP933}}{a character vector}
+    \item{\code{SNP934}}{a character vector}
+    \item{\code{SNP935}}{a character vector}
+    \item{\code{SNP936}}{a character vector}
+    \item{\code{SNP937}}{a character vector}
+    \item{\code{SNP938}}{a character vector}
+    \item{\code{SNP939}}{a character vector}
+    \item{\code{SNP940}}{a character vector}
+    \item{\code{SNP941}}{a character vector}
+    \item{\code{SNP942}}{a character vector}
+    \item{\code{SNP943}}{a character vector}
+    \item{\code{SNP944}}{a character vector}
+    \item{\code{SNP945}}{a character vector}
+    \item{\code{SNP946}}{a character vector}
+    \item{\code{SNP947}}{a character vector}
+    \item{\code{SNP948}}{a character vector}
+    \item{\code{SNP949}}{a character vector}
+    \item{\code{SNP950}}{a character vector}
+    \item{\code{SNP951}}{a character vector}
+    \item{\code{SNP952}}{a character vector}
+    \item{\code{SNP953}}{a character vector}
+    \item{\code{SNP954}}{a character vector}
+    \item{\code{SNP955}}{a character vector}
+    \item{\code{SNP956}}{a character vector}
+    \item{\code{SNP957}}{a character vector}
+    \item{\code{SNP958}}{a character vector}
+    \item{\code{SNP959}}{a character vector}
+    \item{\code{SNP960}}{a character vector}
+    \item{\code{SNP961}}{a character vector}
+    \item{\code{SNP962}}{a character vector}
+    \item{\code{SNP963}}{a character vector}
+    \item{\code{SNP964}}{a character vector}
+    \item{\code{SNP965}}{a character vector}
+    \item{\code{SNP966}}{a character vector}
+    \item{\code{SNP967}}{a character vector}
+    \item{\code{SNP968}}{a character vector}
+    \item{\code{SNP969}}{a character vector}
+    \item{\code{SNP970}}{a character vector}
+    \item{\code{SNP971}}{a character vector}
+    \item{\code{SNP972}}{a character vector}
+    \item{\code{SNP973}}{a character vector}
+    \item{\code{SNP974}}{a character vector}
+    \item{\code{SNP975}}{a character vector}
+    \item{\code{SNP976}}{a character vector}
+    \item{\code{SNP977}}{a character vector}
+    \item{\code{SNP978}}{a character vector}
+    \item{\code{SNP979}}{a character vector}
+    \item{\code{SNP980}}{a character vector}
+    \item{\code{SNP981}}{a character vector}
+    \item{\code{SNP982}}{a character vector}
+    \item{\code{SNP983}}{a character vector}
+    \item{\code{SNP984}}{a character vector}
+    \item{\code{SNP985}}{a character vector}
+    \item{\code{SNP986}}{a character vector}
+    \item{\code{SNP987}}{a character vector}
+    \item{\code{SNP988}}{a character vector}
+    \item{\code{SNP989}}{a character vector}
+    \item{\code{SNP990}}{a character vector}
+    \item{\code{SNP991}}{a character vector}
+    \item{\code{SNP992}}{a character vector}
+    \item{\code{SNP993}}{a character vector}
+    \item{\code{SNP994}}{a character vector}
+    \item{\code{SNP995}}{a character vector}
+    \item{\code{SNP996}}{a character vector}
+    \item{\code{SNP997}}{a character vector}
+    \item{\code{SNP998}}{a character vector}
+    \item{\code{SNP999}}{a character vector}
+    \item{\code{SNP1000}}{a character vector}
+    \item{\code{SNP1001}}{a character vector}
+    \item{\code{SNP1002}}{a character vector}
+    \item{\code{SNP1003}}{a character vector}
+    \item{\code{SNP1004}}{a character vector}
+    \item{\code{SNP1005}}{a character vector}
+    \item{\code{SNP1006}}{a character vector}
+    \item{\code{SNP1007}}{a character vector}
+    \item{\code{SNP1008}}{a character vector}
+    \item{\code{SNP1009}}{a character vector}
+    \item{\code{SNP1010}}{a character vector}
+    \item{\code{SNP1011}}{a character vector}
+    \item{\code{SNP1012}}{a character vector}
+    \item{\code{SNP1013}}{a character vector}
+    \item{\code{SNP1014}}{a character vector}
+    \item{\code{SNP1015}}{a character vector}
+    \item{\code{SNP1016}}{a character vector}
+    \item{\code{SNP1017}}{a character vector}
+    \item{\code{SNP1018}}{a character vector}
+    \item{\code{SNP1019}}{a character vector}
+    \item{\code{SNP1020}}{a character vector}
+    \item{\code{SNP1021}}{a character vector}
+    \item{\code{SNP1022}}{a character vector}
+    \item{\code{SNP1023}}{a character vector}
+    \item{\code{SNP1024}}{a character vector}
+    \item{\code{SNP1025}}{a character vector}
+    \item{\code{SNP1026}}{a character vector}
+    \item{\code{SNP1027}}{a character vector}
+    \item{\code{SNP1028}}{a character vector}
+    \item{\code{SNP1029}}{a character vector}
+    \item{\code{SNP1030}}{a character vector}
+    \item{\code{SNP1031}}{a character vector}
+    \item{\code{SNP1032}}{a character vector}
+    \item{\code{SNP1033}}{a character vector}
+    \item{\code{SNP1034}}{a character vector}
+    \item{\code{SNP1035}}{a character vector}
+    \item{\code{SNP1036}}{a character vector}
+    \item{\code{SNP1037}}{a character vector}
+    \item{\code{SNP1038}}{a character vector}
+    \item{\code{SNP1039}}{a character vector}
+    \item{\code{SNP1040}}{a character vector}
+    \item{\code{SNP1041}}{a character vector}
+    \item{\code{SNP1042}}{a character vector}
+    \item{\code{SNP1043}}{a character vector}
+    \item{\code{SNP1044}}{a character vector}
+    \item{\code{SNP1045}}{a character vector}
+    \item{\code{SNP1046}}{a character vector}
+    \item{\code{SNP1047}}{a character vector}
+    \item{\code{SNP1048}}{a character vector}
+    \item{\code{SNP1049}}{a character vector}
+    \item{\code{SNP1050}}{a character vector}
+    \item{\code{SNP1051}}{a character vector}
+    \item{\code{SNP1052}}{a character vector}
+    \item{\code{SNP1053}}{a character vector}
+    \item{\code{SNP1054}}{a character vector}
+    \item{\code{SNP1055}}{a character vector}
+    \item{\code{SNP1056}}{a character vector}
+    \item{\code{SNP1057}}{a character vector}
+    \item{\code{SNP1058}}{a character vector}
+    \item{\code{SNP1059}}{a character vector}
+    \item{\code{SNP1060}}{a character vector}
+    \item{\code{SNP1061}}{a character vector}
+    \item{\code{SNP1062}}{a character vector}
+    \item{\code{SNP1063}}{a character vector}
+    \item{\code{SNP1064}}{a character vector}
+    \item{\code{SNP1065}}{a character vector}
+    \item{\code{SNP1066}}{a character vector}
+    \item{\code{SNP1067}}{a character vector}
+    \item{\code{SNP1068}}{a character vector}
+    \item{\code{SNP1069}}{a character vector}
+    \item{\code{SNP1070}}{a character vector}
+    \item{\code{SNP1071}}{a character vector}
+    \item{\code{SNP1072}}{a character vector}
+    \item{\code{SNP1073}}{a character vector}
+    \item{\code{SNP1074}}{a character vector}
+    \item{\code{SNP1075}}{a character vector}
+    \item{\code{SNP1076}}{a character vector}
+    \item{\code{SNP1077}}{a character vector}
+    \item{\code{SNP1078}}{a character vector}
+    \item{\code{SNP1079}}{a character vector}
+    \item{\code{SNP1080}}{a character vector}
+    \item{\code{SNP1081}}{a character vector}
+    \item{\code{SNP1082}}{a character vector}
+    \item{\code{SNP1083}}{a character vector}
+    \item{\code{SNP1084}}{a character vector}
+    \item{\code{SNP1085}}{a character vector}
+    \item{\code{SNP1086}}{a character vector}
+    \item{\code{SNP1087}}{a character vector}
+    \item{\code{SNP1088}}{a character vector}
+    \item{\code{SNP1089}}{a character vector}
+    \item{\code{SNP1090}}{a character vector}
+    \item{\code{SNP1091}}{a character vector}
+    \item{\code{SNP1092}}{a character vector}
+    \item{\code{SNP1093}}{a character vector}
+    \item{\code{SNP1094}}{a character vector}
+    \item{\code{SNP1095}}{a character vector}
+    \item{\code{SNP1096}}{a character vector}
+    \item{\code{SNP1097}}{a character vector}
+    \item{\code{SNP1098}}{a character vector}
+    \item{\code{SNP1099}}{a character vector}
+    \item{\code{SNP1100}}{a character vector}
+    \item{\code{SNP1101}}{a character vector}
+    \item{\code{SNP1102}}{a character vector}
+    \item{\code{SNP1103}}{a character vector}
+    \item{\code{SNP1104}}{a character vector}
+    \item{\code{SNP1105}}{a character vector}
+    \item{\code{SNP1106}}{a character vector}
+    \item{\code{SNP1107}}{a character vector}
+    \item{\code{SNP1108}}{a character vector}
+    \item{\code{SNP1109}}{a character vector}
+    \item{\code{SNP1110}}{a character vector}
+    \item{\code{SNP1111}}{a character vector}
+    \item{\code{SNP1112}}{a character vector}
+    \item{\code{SNP1113}}{a character vector}
+    \item{\code{SNP1114}}{a character vector}
+    \item{\code{SNP1115}}{a character vector}
+    \item{\code{SNP1116}}{a character vector}
+    \item{\code{SNP1117}}{a character vector}
+    \item{\code{SNP1118}}{a character vector}
+    \item{\code{SNP1119}}{a character vector}
+    \item{\code{SNP1120}}{a character vector}
+    \item{\code{SNP1121}}{a character vector}
+    \item{\code{SNP1122}}{a character vector}
+    \item{\code{SNP1123}}{a character vector}
+    \item{\code{SNP1124}}{a character vector}
+    \item{\code{SNP1125}}{a character vector}
+    \item{\code{SNP1126}}{a character vector}
+    \item{\code{SNP1127}}{a character vector}
+    \item{\code{SNP1128}}{a character vector}
+    \item{\code{SNP1129}}{a character vector}
+    \item{\code{SNP1130}}{a character vector}
+    \item{\code{SNP1131}}{a character vector}
+    \item{\code{SNP1132}}{a character vector}
+    \item{\code{SNP1133}}{a character vector}
+    \item{\code{SNP1134}}{a character vector}
+    \item{\code{SNP1135}}{a character vector}
+    \item{\code{SNP1136}}{a character vector}
+    \item{\code{SNP1137}}{a character vector}
+    \item{\code{SNP1138}}{a character vector}
+    \item{\code{SNP1139}}{a character vector}
+    \item{\code{SNP1140}}{a character vector}
+    \item{\code{SNP1141}}{a character vector}
+    \item{\code{SNP1142}}{a character vector}
+    \item{\code{SNP1143}}{a character vector}
+    \item{\code{SNP1144}}{a character vector}
+    \item{\code{SNP1145}}{a character vector}
+    \item{\code{SNP1146}}{a character vector}
+    \item{\code{SNP1147}}{a character vector}
+    \item{\code{SNP1148}}{a character vector}
+    \item{\code{SNP1149}}{a character vector}
+    \item{\code{SNP1150}}{a character vector}
+    \item{\code{SNP1151}}{a character vector}
+    \item{\code{SNP1152}}{a character vector}
+    \item{\code{SNP1153}}{a character vector}
+    \item{\code{SNP1154}}{a character vector}
+    \item{\code{SNP1155}}{a character vector}
+    \item{\code{SNP1156}}{a character vector}
+    \item{\code{SNP1157}}{a character vector}
+    \item{\code{SNP1158}}{a character vector}
+    \item{\code{SNP1159}}{a character vector}
+    \item{\code{SNP1160}}{a character vector}
+    \item{\code{SNP1161}}{a character vector}
+    \item{\code{SNP1162}}{a character vector}
+    \item{\code{SNP1163}}{a character vector}
+    \item{\code{SNP1164}}{a character vector}
+    \item{\code{SNP1165}}{a character vector}
+    \item{\code{SNP1166}}{a character vector}
+    \item{\code{SNP1167}}{a character vector}
+    \item{\code{SNP1168}}{a character vector}
+    \item{\code{SNP1169}}{a character vector}
+    \item{\code{SNP1170}}{a character vector}
+    \item{\code{SNP1171}}{a character vector}
+    \item{\code{SNP1172}}{a character vector}
+    \item{\code{SNP1173}}{a character vector}
+    \item{\code{SNP1174}}{a character vector}
+    \item{\code{SNP1175}}{a character vector}
+    \item{\code{SNP1176}}{a character vector}
+    \item{\code{SNP1177}}{a character vector}
+    \item{\code{SNP1178}}{a character vector}
+    \item{\code{SNP1179}}{a character vector}
+    \item{\code{SNP1180}}{a character vector}
+    \item{\code{SNP1181}}{a character vector}
+    \item{\code{SNP1182}}{a character vector}
+    \item{\code{SNP1183}}{a character vector}
+    \item{\code{SNP1184}}{a character vector}
+    \item{\code{SNP1185}}{a character vector}
+    \item{\code{SNP1186}}{a character vector}
+    \item{\code{SNP1187}}{a character vector}
+    \item{\code{SNP1188}}{a character vector}
+    \item{\code{SNP1189}}{a character vector}
+    \item{\code{SNP1190}}{a character vector}
+    \item{\code{SNP1191}}{a character vector}
+    \item{\code{SNP1192}}{a character vector}
+    \item{\code{SNP1193}}{a character vector}
+    \item{\code{SNP1194}}{a character vector}
+    \item{\code{SNP1195}}{a character vector}
+    \item{\code{SNP1196}}{a character vector}
+    \item{\code{SNP1197}}{a character vector}
+    \item{\code{SNP1198}}{a character vector}
+    \item{\code{SNP1199}}{a character vector}
+    \item{\code{SNP1200}}{a character vector}
+    \item{\code{SNP1201}}{a character vector}
+    \item{\code{SNP1202}}{a character vector}
+    \item{\code{SNP1203}}{a character vector}
+    \item{\code{SNP1204}}{a character vector}
+    \item{\code{SNP1205}}{a character vector}
+    \item{\code{SNP1206}}{a character vector}
+    \item{\code{SNP1207}}{a character vector}
+    \item{\code{SNP1208}}{a character vector}
+    \item{\code{SNP1209}}{a character vector}
+    \item{\code{SNP1210}}{a character vector}
+    \item{\code{SNP1211}}{a character vector}
+    \item{\code{SNP1212}}{a character vector}
+    \item{\code{SNP1213}}{a character vector}
+    \item{\code{SNP1214}}{a character vector}
+    \item{\code{SNP1215}}{a character vector}
+    \item{\code{SNP1216}}{a character vector}
+    \item{\code{SNP1217}}{a character vector}
+    \item{\code{SNP1218}}{a character vector}
+    \item{\code{SNP1219}}{a character vector}
+    \item{\code{SNP1220}}{a character vector}
+    \item{\code{SNP1221}}{a character vector}
+    \item{\code{SNP1222}}{a character vector}
+    \item{\code{SNP1223}}{a character vector}
+    \item{\code{SNP1224}}{a character vector}
+    \item{\code{SNP1225}}{a character vector}
+    \item{\code{SNP1226}}{a character vector}
+    \item{\code{SNP1227}}{a character vector}
+    \item{\code{SNP1228}}{a character vector}
+    \item{\code{SNP1229}}{a character vector}
+    \item{\code{SNP1230}}{a character vector}
+    \item{\code{SNP1231}}{a character vector}
+    \item{\code{SNP1232}}{a character vector}
+    \item{\code{SNP1233}}{a character vector}
+    \item{\code{SNP1234}}{a character vector}
+    \item{\code{SNP1235}}{a character vector}
+    \item{\code{SNP1236}}{a character vector}
+    \item{\code{SNP1237}}{a character vector}
+    \item{\code{SNP1238}}{a character vector}
+    \item{\code{SNP1239}}{a character vector}
+    \item{\code{SNP1240}}{a character vector}
+    \item{\code{SNP1241}}{a character vector}
+    \item{\code{SNP1242}}{a character vector}
+    \item{\code{SNP1243}}{a character vector}
+    \item{\code{SNP1244}}{a character vector}
+    \item{\code{SNP1245}}{a character vector}
+    \item{\code{SNP1246}}{a character vector}
+    \item{\code{SNP1247}}{a character vector}
+    \item{\code{SNP1248}}{a character vector}
+    \item{\code{SNP1249}}{a character vector}
+    \item{\code{SNP1250}}{a character vector}
+    \item{\code{SNP1251}}{a character vector}
+    \item{\code{SNP1252}}{a character vector}
+    \item{\code{SNP1253}}{a character vector}
+    \item{\code{SNP1254}}{a character vector}
+    \item{\code{SNP1255}}{a character vector}
+    \item{\code{SNP1256}}{a character vector}
+    \item{\code{SNP1257}}{a character vector}
+    \item{\code{SNP1258}}{a character vector}
+    \item{\code{SNP1259}}{a character vector}
+    \item{\code{SNP1260}}{a character vector}
+    \item{\code{SNP1261}}{a character vector}
+    \item{\code{SNP1262}}{a character vector}
+    \item{\code{SNP1263}}{a character vector}
+    \item{\code{SNP1264}}{a character vector}
+    \item{\code{SNP1265}}{a character vector}
+    \item{\code{SNP1266}}{a character vector}
+    \item{\code{SNP1267}}{a character vector}
+    \item{\code{SNP1268}}{a character vector}
+    \item{\code{SNP1269}}{a character vector}
+    \item{\code{SNP1270}}{a character vector}
+    \item{\code{SNP1271}}{a character vector}
+    \item{\code{SNP1272}}{a character vector}
+    \item{\code{SNP1273}}{a character vector}
+    \item{\code{SNP1274}}{a character vector}
+    \item{\code{SNP1275}}{a character vector}
+    \item{\code{SNP1276}}{a character vector}
+    \item{\code{SNP1277}}{a character vector}
+    \item{\code{SNP1278}}{a character vector}
+    \item{\code{SNP1279}}{a character vector}
+    \item{\code{SNP1280}}{a character vector}
+    \item{\code{SNP1281}}{a character vector}
+    \item{\code{SNP1282}}{a character vector}
+    \item{\code{SNP1283}}{a character vector}
+    \item{\code{SNP1284}}{a character vector}
+    \item{\code{SNP1285}}{a character vector}
+    \item{\code{SNP1286}}{a character vector}
+    \item{\code{SNP1287}}{a character vector}
+    \item{\code{SNP1288}}{a character vector}
+    \item{\code{SNP1289}}{a character vector}
+    \item{\code{SNP1290}}{a character vector}
+    \item{\code{SNP1291}}{a character vector}
+    \item{\code{SNP1292}}{a character vector}
+    \item{\code{SNP1293}}{a character vector}
+    \item{\code{SNP1294}}{a character vector}
+    \item{\code{SNP1295}}{a character vector}
+    \item{\code{SNP1296}}{a character vector}
+    \item{\code{SNP1297}}{a character vector}
+    \item{\code{SNP1298}}{a character vector}
+    \item{\code{SNP1299}}{a character vector}
+    \item{\code{SNP1300}}{a character vector}
+    \item{\code{SNP1301}}{a character vector}
+    \item{\code{SNP1302}}{a character vector}
+    \item{\code{SNP1303}}{a character vector}
+    \item{\code{SNP1304}}{a character vector}
+    \item{\code{SNP1305}}{a character vector}
+    \item{\code{SNP1306}}{a character vector}
+    \item{\code{SNP1307}}{a character vector}
+    \item{\code{SNP1308}}{a character vector}
+    \item{\code{SNP1309}}{a character vector}
+    \item{\code{SNP1310}}{a character vector}
+    \item{\code{SNP1311}}{a character vector}
+    \item{\code{SNP1312}}{a character vector}
+    \item{\code{SNP1313}}{a character vector}
+    \item{\code{SNP1314}}{a character vector}
+    \item{\code{SNP1315}}{a character vector}
+    \item{\code{SNP1316}}{a character vector}
+    \item{\code{SNP1317}}{a character vector}
+    \item{\code{SNP1318}}{a character vector}
+    \item{\code{SNP1319}}{a character vector}
+    \item{\code{SNP1320}}{a character vector}
+    \item{\code{SNP1321}}{a character vector}
+    \item{\code{SNP1322}}{a character vector}
+    \item{\code{SNP1323}}{a character vector}
+    \item{\code{SNP1324}}{a character vector}
+    \item{\code{SNP1325}}{a character vector}
+    \item{\code{SNP1326}}{a character vector}
+    \item{\code{SNP1327}}{a character vector}
+    \item{\code{SNP1328}}{a character vector}
+    \item{\code{SNP1329}}{a character vector}
+    \item{\code{SNP1330}}{a character vector}
+    \item{\code{SNP1331}}{a character vector}
+    \item{\code{SNP1332}}{a character vector}
+    \item{\code{SNP1333}}{a character vector}
+    \item{\code{SNP1334}}{a character vector}
+    \item{\code{SNP1335}}{a character vector}
+    \item{\code{SNP1336}}{a character vector}
+    \item{\code{SNP1337}}{a character vector}
+    \item{\code{SNP1338}}{a character vector}
+    \item{\code{SNP1339}}{a character vector}
+    \item{\code{SNP1340}}{a character vector}
+    \item{\code{SNP1341}}{a character vector}
+    \item{\code{SNP1342}}{a character vector}
+    \item{\code{SNP1343}}{a character vector}
+    \item{\code{SNP1344}}{a character vector}
+    \item{\code{SNP1345}}{a character vector}
+    \item{\code{SNP1346}}{a character vector}
+    \item{\code{SNP1347}}{a character vector}
+    \item{\code{SNP1348}}{a character vector}
+    \item{\code{SNP1349}}{a character vector}
+    \item{\code{SNP1350}}{a character vector}
+    \item{\code{SNP1351}}{a character vector}
+    \item{\code{SNP1352}}{a character vector}
+    \item{\code{SNP1353}}{a character vector}
+    \item{\code{SNP1354}}{a character vector}
+    \item{\code{SNP1355}}{a character vector}
+    \item{\code{SNP1356}}{a character vector}
+    \item{\code{SNP1357}}{a character vector}
+    \item{\code{SNP1358}}{a character vector}
+    \item{\code{SNP1359}}{a character vector}
+    \item{\code{SNP1360}}{a character vector}
+    \item{\code{SNP1361}}{a character vector}
+    \item{\code{SNP1362}}{a character vector}
+    \item{\code{SNP1363}}{a character vector}
+    \item{\code{SNP1364}}{a character vector}
+    \item{\code{SNP1365}}{a character vector}
+    \item{\code{SNP1366}}{a character vector}
+    \item{\code{SNP1367}}{a character vector}
+    \item{\code{SNP1368}}{a character vector}
+    \item{\code{SNP1369}}{a character vector}
+    \item{\code{SNP1370}}{a character vector}
+    \item{\code{SNP1371}}{a character vector}
+    \item{\code{SNP1372}}{a character vector}
+    \item{\code{SNP1373}}{a character vector}
+    \item{\code{SNP1374}}{a character vector}
+    \item{\code{SNP1375}}{a character vector}
+    \item{\code{SNP1376}}{a character vector}
+    \item{\code{SNP1377}}{a character vector}
+    \item{\code{SNP1378}}{a character vector}
+    \item{\code{SNP1379}}{a character vector}
+    \item{\code{SNP1380}}{a character vector}
+    \item{\code{SNP1381}}{a character vector}
+    \item{\code{SNP1382}}{a character vector}
+    \item{\code{SNP1383}}{a character vector}
+    \item{\code{SNP1384}}{a character vector}
+    \item{\code{SNP1385}}{a character vector}
+    \item{\code{SNP1386}}{a character vector}
+    \item{\code{SNP1387}}{a character vector}
+    \item{\code{SNP1388}}{a character vector}
+    \item{\code{SNP1389}}{a character vector}
+    \item{\code{SNP1390}}{a character vector}
+    \item{\code{SNP1391}}{a character vector}
+    \item{\code{SNP1392}}{a character vector}
+    \item{\code{SNP1393}}{a character vector}
+    \item{\code{SNP1394}}{a character vector}
+    \item{\code{SNP1395}}{a character vector}
+    \item{\code{SNP1396}}{a character vector}
+    \item{\code{SNP1397}}{a character vector}
+    \item{\code{SNP1398}}{a character vector}
+    \item{\code{SNP1399}}{a character vector}
+    \item{\code{SNP1400}}{a character vector}
+    \item{\code{SNP1401}}{a character vector}
+    \item{\code{SNP1402}}{a character vector}
+    \item{\code{SNP1403}}{a character vector}
+    \item{\code{SNP1404}}{a character vector}
+    \item{\code{SNP1405}}{a character vector}
+    \item{\code{SNP1406}}{a character vector}
+    \item{\code{SNP1407}}{a character vector}
+    \item{\code{SNP1408}}{a character vector}
+    \item{\code{SNP1409}}{a character vector}
+    \item{\code{SNP1410}}{a character vector}
+    \item{\code{SNP1411}}{a character vector}
+    \item{\code{SNP1412}}{a character vector}
+    \item{\code{SNP1413}}{a character vector}
+    \item{\code{SNP1414}}{a character vector}
+    \item{\code{SNP1415}}{a character vector}
+    \item{\code{SNP1416}}{a character vector}
+    \item{\code{SNP1417}}{a character vector}
+    \item{\code{SNP1418}}{a character vector}
+    \item{\code{SNP1419}}{a character vector}
+    \item{\code{SNP1420}}{a character vector}
+    \item{\code{SNP1421}}{a character vector}
+    \item{\code{SNP1422}}{a character vector}
+    \item{\code{SNP1423}}{a character vector}
+    \item{\code{SNP1424}}{a character vector}
+    \item{\code{SNP1425}}{a character vector}
+    \item{\code{SNP1426}}{a character vector}
+    \item{\code{SNP1427}}{a character vector}
+    \item{\code{SNP1428}}{a character vector}
+    \item{\code{SNP1429}}{a character vector}
+    \item{\code{SNP1430}}{a character vector}
+    \item{\code{SNP1431}}{a character vector}
+    \item{\code{SNP1432}}{a character vector}
+    \item{\code{SNP1433}}{a character vector}
+    \item{\code{SNP1434}}{a character vector}
+    \item{\code{SNP1435}}{a character vector}
+    \item{\code{SNP1436}}{a character vector}
+    \item{\code{SNP1437}}{a character vector}
+    \item{\code{SNP1438}}{a character vector}
+    \item{\code{SNP1439}}{a character vector}
+    \item{\code{SNP1440}}{a character vector}
+    \item{\code{SNP1441}}{a character vector}
+    \item{\code{SNP1442}}{a character vector}
+    \item{\code{SNP1443}}{a character vector}
+    \item{\code{SNP1444}}{a character vector}
+    \item{\code{SNP1445}}{a character vector}
+    \item{\code{SNP1446}}{a character vector}
+    \item{\code{SNP1447}}{a character vector}
+    \item{\code{SNP1448}}{a character vector}
+    \item{\code{SNP1449}}{a character vector}
+    \item{\code{SNP1450}}{a character vector}
+    \item{\code{SNP1451}}{a character vector}
+    \item{\code{SNP1452}}{a character vector}
+    \item{\code{SNP1453}}{a character vector}
+    \item{\code{SNP1454}}{a character vector}
+    \item{\code{SNP1455}}{a character vector}
+    \item{\code{SNP1456}}{a character vector}
+    \item{\code{SNP1457}}{a character vector}
+    \item{\code{SNP1458}}{a character vector}
+    \item{\code{SNP1459}}{a character vector}
+    \item{\code{SNP1460}}{a character vector}
+    \item{\code{SNP1461}}{a character vector}
+    \item{\code{SNP1462}}{a character vector}
+    \item{\code{SNP1463}}{a character vector}
+    \item{\code{SNP1464}}{a character vector}
+    \item{\code{SNP1465}}{a character vector}
+    \item{\code{SNP1466}}{a character vector}
+    \item{\code{SNP1467}}{a character vector}
+    \item{\code{SNP1468}}{a character vector}
+    \item{\code{SNP1469}}{a character vector}
+    \item{\code{SNP1470}}{a character vector}
+    \item{\code{SNP1471}}{a character vector}
+    \item{\code{SNP1472}}{a character vector}
+    \item{\code{SNP1473}}{a character vector}
+    \item{\code{SNP1474}}{a character vector}
+    \item{\code{SNP1475}}{a character vector}
+    \item{\code{SNP1476}}{a character vector}
+    \item{\code{SNP1477}}{a character vector}
+    \item{\code{SNP1478}}{a character vector}
+    \item{\code{SNP1479}}{a character vector}
+    \item{\code{SNP1480}}{a character vector}
+    \item{\code{SNP1481}}{a character vector}
+    \item{\code{SNP1482}}{a character vector}
+    \item{\code{SNP1483}}{a character vector}
+    \item{\code{SNP1484}}{a character vector}
+    \item{\code{SNP1485}}{a character vector}
+    \item{\code{SNP1486}}{a character vector}
+    \item{\code{SNP1487}}{a character vector}
+    \item{\code{SNP1488}}{a character vector}
+    \item{\code{SNP1489}}{a character vector}
+    \item{\code{SNP1490}}{a character vector}
+    \item{\code{SNP1491}}{a character vector}
+    \item{\code{SNP1492}}{a character vector}
+    \item{\code{SNP1493}}{a character vector}
+    \item{\code{SNP1494}}{a character vector}
+    \item{\code{SNP1495}}{a character vector}
+    \item{\code{SNP1496}}{a character vector}
+    \item{\code{SNP1497}}{a character vector}
+    \item{\code{SNP1498}}{a character vector}
+    \item{\code{SNP1499}}{a character vector}
+    \item{\code{SNP1500}}{a character vector}
   }
 }
 \examples{
