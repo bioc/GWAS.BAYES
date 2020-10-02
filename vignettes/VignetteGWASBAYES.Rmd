@@ -65,20 +65,20 @@ The functions implemented in `GWAS.BAYES` are described below:
 
 To fully understand the package `GWAS.BAYES` some brief model details are required. The model for GWAS studies used in this package is
 
-$$
-\textbf{y} = X \pmb{\beta} + Z \textbf{u} + A \textbf{q} + \pmb{\epsilon} \ \text{where} \ \pmb{\epsilon} \sim N(\pmb{0},\sigma^2 I) \ \text{and} \ \textbf{q} \sim N(\pmb{0},\sigma^2 \tau K)
-$$
+\begin{equation*}
+\textbf{y} = X \boldsymbol{\beta} + Z \textbf{u} + A \textbf{q} + \boldsymbol{\epsilon} \ \text{where} \ \boldsymbol{\epsilon} \sim N(\textbf{0},\sigma^2 I) \ \text{and} \ \textbf{q} \sim N(\textbf{0},\sigma^2 \tau K)
+\end{equation*}
 
 where
 
 * $\textbf{y}$ is the phenotype response.
 * $X$ is the matrix of SNPs (single nucleotide polymorphisms).
-* $\pmb{\beta}$ is the vector of regression coefficients that contains the effects of the SNPs.
+* $\boldsymbol{\beta}$ is the vector of regression coefficients that contains the effects of the SNPs.
 * $Z$ is a matrix with the population structure (eg. principal components).
 * $\textbf{u}$ is a vector of coefficients related to the population structure.
 * $A$ is an incidence matrix projecting the random effects associated with the kinship structure.
 * $\textbf{q}$ is a vector of random effects associated with the kinship structure.
-* $\pmb{\epsilon}$ is the error vector.
+* $\boldsymbol{\epsilon}$ is the error vector.
 * $\sigma^2$ is the variance of the errors.
 * $\tau$ is a parameter related to the variance of the random effects.
 * $K$ is the kinship matrix.
