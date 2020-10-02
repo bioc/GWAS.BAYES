@@ -51,8 +51,8 @@ Each data set has a set of SNPs as well as a phenotype.
 
 The functions implemented in `GWAS.BAYES` are described below:
 
-* `standardize` Takes a matrix or dataframe where each column is a SNP with levels A, C, T, or G, and each row is a species/ecotypes/taxon. This returns a matrix of similar design but now the values of each column are 0's or 1's.
-* `aggregate_SNPs` Aggregates the SNPs according to replications of the species/ecotypes/taxon.
+* `standardize` Takes a matrix or dataframe where each column is a SNP with levels A, C, T, or G, and each row is a species/ecotypes/taxa. This returns a matrix of similar design but now the values of each column are 0's or 1's.
+* `aggregate_SNPs` Aggregates the SNPs according to replications of the species/ecotypes/taxa.
 * `level_function` Removes SNPs with Minor Allele Frequency less than a specified value.
 * `preprocess_SNPs` Does what the `standardize`, `aggregate_SNPs`, and `level_function` do but wrapped all into one function.
 * `pca_function` Computes principal components for controlling population structure/relatedness in the GWAS analysis.
@@ -114,7 +114,7 @@ SNPs <- standardize(SNPs = SNPs,method = "major-minor",number_cores = 1)
 SNPs[1:6,1:10]
 ```
 
-As in most GWAS studies, we aggregate both the SNPs and the phenotype over the replications of each species/ecotypes/taxon to speed up computation. The `aggregate_SNPs` function takes both the SNP matrix and the phenotype response and returns a list with the aggregated SNP design and the aggregated phenotypes.
+As in most GWAS studies, we aggregate both the SNPs and the phenotype over the replications of each species/ecotypes/taxa to speed up computation. The `aggregate_SNPs` function takes both the SNP matrix and the phenotype response and returns a list with the aggregated SNP design and the aggregated phenotypes.
 
 ```{r }
 aggregate_list <- aggregate_SNPs(SNPs = SNPs, Y = Y)
@@ -122,7 +122,7 @@ SNPs <- aggregate_list$SNPs
 Y <- aggregate_list$Y
 ```
 
-The next step is to clean up the standardized SNP data in preparation for the `preselection` function. If this step is not taken the `preselection` function would break because it cannot give a p-value for a SNP that has the same allele for all species/ecotypes/taxon in the dataset. The `level_function` function will clean up the standardized SNPs by removing all SNPs with minor allele frequency less than or equal to the input value `MAF`. To keep all SNPs with minor allele frequency larger than zero, set `MAF = 0`. The function will return a list where the first element is a standardized SNP matrix and the second element is a vector of TRUE and FALSE that will be TRUE if the corresponding SNP is kept and FALSE if the SNP is removed. The default value for MAF is `MAF = 0.01`.
+The next step is to clean up the standardized SNP data in preparation for the `preselection` function. If this step is not taken the `preselection` function would break because it cannot give a p-value for a SNP that has the same allele for all species/ecotypes/taxa in the dataset. The `level_function` function will clean up the standardized SNPs by removing all SNPs with minor allele frequency less than or equal to the input value `MAF`. To keep all SNPs with minor allele frequency larger than zero, set `MAF = 0`. The function will return a list where the first element is a standardized SNP matrix and the second element is a vector of TRUE and FALSE that will be TRUE if the corresponding SNP is kept and FALSE if the SNP is removed. The default value for MAF is `MAF = 0.01`.
 
 ```{r }
 level_list <- level_function(SNPs = SNPs, MAF = 0.01)
