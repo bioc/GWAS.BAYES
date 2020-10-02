@@ -36,7 +36,7 @@ Our Bayesian pipeline for GWAS analysis selects significant SNPs in two stages. 
 To this extent `GWAS.BAYES` provides functions to:
 
 * Preprocess SNP data and phenotype responses.
-* Pre-screen individual SNPs in a traditional GWAS manor.
+* Pre-screen individual SNPs in a traditional GWAS manner.
 * Search for the Bayesian highest probability model including multiple significant SNPs.
 
 This vignette explores three different examples to show how the functions provided in `GWAS.BAYES` implement the above points. The three case studies of interest are: 
@@ -51,8 +51,8 @@ Each data set has a set of SNPs as well as a phenotype.
 
 The functions implemented in `GWAS.BAYES` are described below:
 
-* `standardize` Takes a matrix or dataframe where each column is a SNP with levels A, C, T, or G, and each row is a species/ecotype/taxa. This returns a matrix of similar design but now the values of each column are 0's or 1's.
-* `aggregate_SNPs` Aggregates the SNPs according to replications of the species/ecotype/taxa.
+* `standardize` Takes a matrix or dataframe where each column is a SNP with levels A, C, T, or G, and each row is a species/ecotypes/taxon. This returns a matrix of similar design but now the values of each column are 0's or 1's.
+* `aggregate_SNPs` Aggregates the SNPs according to replications of the species/ecotypes/taxon.
 * `level_function` Removes SNPs with Minor Allele Frequency less than a specified value.
 * `preprocess_SNPs` Does what the `standardize`, `aggregate_SNPs`, and `level_function` do but wrapped all into one function.
 * `pca_function` Computes principal components for controlling population structure/relatedness in the GWAS analysis.
@@ -87,7 +87,7 @@ Not all GWAS models have to be comprised of a kinship matrix (relatedness) or pr
 
 # Two Simulated Data sets
 
-This section explores simulated data mimicking the selfing species _A. Thaliana_. We explore two simulated datasets where one data set has no kinship structure while the other data set does. In both simulated datasets the first five SNPs are the only SNPs that have an effect on the response i.e. the first five SNPs are the only non-null SNPs. The datasets were created assuming that all SNPs are independent of each other.
+This section explores simulated data mimicking the selfing species _A. Thaliana_. We explore two simulated datasets where one data set has no kinship structure while the other data set does. In both simulated datasets the first five SNPs are the only SNPs that influence the response i.e. the first five SNPs are the only non-null SNPs. The datasets were created assuming that all SNPs are independent of each other.
 
 ## Data with Population structure measured with principal components
 
@@ -107,14 +107,14 @@ SNPs <- vignette_lm_dat[,-1]
 
 The SNPs can either be imported as strings or factors.
 
-To prepare SNPs for the analysis the data must be taken from its raw state (above) into a finer state to speed up analysis. First, apply the `standardize` function to transform the SNPs to {0.1}. This can be done in two ways. The first way is alphabetically; meaning that if the letter comes first in the alphabet then that would be a 0 while the letter that comes second in the alphabet would be a 1. The second way to do this is by major and minor allele, the major allele becomes 0 and the minor allele becomes a 1. Note either method will lead to the same significant SNPs; the two will differ by the interpretation of the results. The default method is `method = "major-minor"` and the possible methods are `method=c("major-minor","alphabetical")`.
+To prepare SNPs for the analysis the data must be taken from its raw state (above) into a finer state to speed up analysis. First, apply the `standardize` function to transform the SNPs to {0,1}. This can be done in two ways. The first way is alphabetically; meaning that if the letter comes first in the alphabet then that would be a 1 while the letter that comes second in the alphabet would be a 0. The second way to do this is by major and minor allele, the major allele becomes a 1 and the minor allele becomes a 0. Note either method will lead to the same significant SNPs; the two will differ by the interpretation of the results. The default method is `method = "major-minor"` and the possible methods are `method=c("major-minor","alphabetical")`.
 
 ```{r }
 SNPs <- standardize(SNPs = SNPs,method = "major-minor",number_cores = 1)
 SNPs[1:6,1:10]
 ```
 
-As in most GWAS studies, we aggregate both the SNPs and the phenotype over there replications of each species/ecotype/taxa to speed up computation. The `aggregate_SNPs` function takes both the SNP matrix and the phenotype response and returns a list with the aggregated SNP design and the aggregated phenotypes.
+As in most GWAS studies, we aggregate both the SNPs and the phenotype over the replications of each species/ecotypes/taxon to speed up computation. The `aggregate_SNPs` function takes both the SNP matrix and the phenotype response and returns a list with the aggregated SNP design and the aggregated phenotypes.
 
 ```{r }
 aggregate_list <- aggregate_SNPs(SNPs = SNPs, Y = Y)
@@ -122,7 +122,7 @@ SNPs <- aggregate_list$SNPs
 Y <- aggregate_list$Y
 ```
 
-The next step is to clean up the standardized SNP data in preparation for the `preselection` function. If this step isn't taken the `preselection` function would break because it can not give a p-value for a SNP with only one allele. The `level_function` function will clean up the standardized SNPs by removing all SNPs with minor allele frequency less than or equal to the input value `MAF`. To keep all SNPs set `MAF = 0`. The function will return a list where the first element is a standardized SNP matrix and the second element is a vector of TRUE and FALSE that will be TRUE if the corresponding SNP is kept and FALSE if the SNP is removed. The default value for MAF is `MAF = 0.01`.
+The next step is to clean up the standardized SNP data in preparation for the `preselection` function. If this step is not taken the `preselection` function would break because it cannot give a p-value for a SNP that has the same allele for all species/ecotypes/taxon in the dataset. The `level_function` function will clean up the standardized SNPs by removing all SNPs with minor allele frequency less than or equal to the input value `MAF`. To keep all SNPs with minor allele frequency larger than zero, set `MAF = 0`. The function will return a list where the first element is a standardized SNP matrix and the second element is a vector of TRUE and FALSE that will be TRUE if the corresponding SNP is kept and FALSE if the SNP is removed. The default value for MAF is `MAF = 0.01`.
 
 ```{r }
 level_list <- level_function(SNPs = SNPs, MAF = 0.01)
@@ -144,7 +144,7 @@ all.equal(fullPreprocess$Y,Y)
 fullPreprocess$SNPs_Dropped;level_list$SNPs_Dropped
 ```
 
-The results above highlight how both of these methods of data preparation produce identical results.
+The results above highlight how both methods of data preparation produce identical results.
 
 Next, we estimate population structure through the computation of principal components. This is a common tool used in GWAS studies to eliminate the number of false positives. The `pca_function` function takes three inputs the matrix of standardized SNPs as created above, the number of principal components you would like in your model, and if you would like to plot the percent variation explained by the principal components. Make sure to utilize the `plot_it` variable within the function to fully understand how many principal components are needed to control for false positives. The function will return a matrix that has the same number of rows as the matrix you inputted and number of columns equal to the number of principal components.
 
@@ -153,7 +153,7 @@ principal_comp <- pca_function(SNPs = SNPs,number_components = 3,
   plot_it = TRUE)
 ```
 
-Figure 1 indicates that one principal component is enough to capture the variation in the SNP data. Thus, we save the first principal component for later analysis using the below command.
+Figure 1 indicates that one principal component is enough to capture most of the variation in the SNP data. Thus, we save the first principal component for later analysis using the below command.
 
 ```{r }
 principal_comp <- as.matrix(principal_comp[,1])
@@ -197,7 +197,7 @@ cor_plot(SNPs = SNPs,
   info = FALSE)
 ```
 
-This plot highlights the correlations between pairs of SNPs with the diagonal showing correlation between the same SNP. The correlation ranges from -1 to 1. Depending on how many significant SNPs plotted, the correlation plot created from the `cor_plot` function will be different.
+This plot highlights the correlations between pairs of SNPs with the diagonal showing correlation between the same SNP.
 
 #### False Discovery Correction
 
@@ -229,7 +229,7 @@ The Bayesian False Discovery Correction also correctly finds that the first five
 
 ### Bayesian Model Selection
 
-The function postGWAS implements the second stage of GWAS.BAYES, which performs Bayesian model search  where the set of candidate SNPs obtained from the screening phase compete with each other. The resulting best models typically contain a much smaller set of SNPs, which are the most promising SNPs for follow-up lab experiments.
+The function postGWAS implements the second stage of GWAS.BAYES, which performs Bayesian model search where the set of candidate SNPs obtained from the screening phase compete with each other. The resulting best models typically contain a much smaller set of SNPs, which are the most promising SNPs for follow-up lab experiments.
 
 The function below uses the results from the pre-screen step with the Bonferroni Correction. Note this is implemented with the `significant` argument.
 
@@ -241,11 +241,11 @@ GA_results <- postGWAS(Y = Y,SNPs = SNPs,number_cores = 1,
 GA_results
 ```
 
-The exhaustive search suggests that the best model is the model with the first 5 SNPs again matching the correct settings for this simulated data set. In addition, the posterior probability of this model is 1, which provides further confirmation that these 5 SNPs are the most promising for follow up experiments.
+The exhaustive search suggests that the best model is the model with the first 5 SNPs again matching the correct settings for this simulated data set. In addition, the posterior probability of this model is 1, which provides further confirmation that these 5 SNPs are the most promising for follow up lab experiments.
 
 ## Data with Population structure measured with a kinship matrix
 
-Another feature in the `GWAS.BAYES` package is the ability to model kinship. The kinship matrix defines relatedness between individuals or species in the analysis. Inclusion of random effects with kinship covariance matrix is a very popular tool to aid in the reduction of false positives in GWAS analyses. We will show how to calculate kinship using the function `A.mat` from the `rrBLUP` package [@rrBLUP] and use our package with the kinship structure. The function `A.mat` takes as a argument the matrix of standardized SNPs similar to `pca_function` above. Note that since most GWAS analyses have replications of the same breed, therefore having the same exact SNP structure, the `A.mat` function computes a kinship matrix between all different breeds with different SNP structure. 
+Another feature in the `GWAS.BAYES` package is the ability to model kinship. The kinship matrix defines relatedness between individuals or species in the analysis. Inclusion of random effects with kinship covariance matrix is a very popular tool to aid in the reduction of false positives in GWAS analyses. We will show how to calculate kinship using the function `A.mat` from the `rrBLUP` package [@rrBLUP] and use our package with the kinship structure. The function `A.mat` takes as an argument the matrix of standardized SNPs similar to the `pca_function` above. Note that since most GWAS analyses for selfing species have replications of the same ecotype, therefore having the same exact SNP structure, the `A.mat` function computes a kinship matrix between all different ecotypes with different SNP structure. 
 
 ```{r }
 data("vignette_kinship_dat")
@@ -327,7 +327,7 @@ sum(Significant_SNPs_BFDR$Significant) #4 Significant SNPs
 which(Significant_SNPs_BFDR$Significant == 1)
 ```
 
-Similarly to the Bonferroni correction, the pre-screen step for the Bayesian False Discovery Correction suggests the first 5 SNPs are significant.
+Like the Bonferroni correction, the pre-screen step for the Bayesian False Discovery Correction suggests the first 5 SNPs are significant.
 
 ### Bayesian Model Selection
 
@@ -344,7 +344,7 @@ The genetic search correctly proposes the model with the first 5 SNPs as the bes
 
 # A. Thaliana Analysis
 
-We highlight a real data analysis of _A. Thaliana_ from the paper "Genetic Components of Root Architecture Remodeling in Response to Salt Stress" published in the journal Plant Cell [@Julkowska3198]. The article studies phenotype responses of _A. Thaliana_ to salt stress. The phenotype studied in this vignette is the ratio of average lateral and main root length at low salt stress conditions (75 mM NaCl). This GWAS analysis is highlighted in figure 3 in their paper. The paper identifies a region of significant SNPs between chromosome 4 and chromosome 5 using a model that controls for relatedness using a kinship matrix. For illustration, the data set included in this vignette has the first 500 SNPs of chromosome 1, the last 500 SNPs of chromosome 4, and the first 500 SNPs of chromosome 5. 
+We highlight a real data analysis of _A. Thaliana_ from the paper "Genetic Components of Root Architecture Remodeling in Response to Salt Stress" published in the journal Plant Cell [@Julkowska3198]. The article studies phenotype responses of _A. Thaliana_ to salt stress. The phenotype studied in this vignette is the ratio of average lateral and main root length at low salt stress conditions (75 mM NaCl). This GWAS analysis is highlighted in figure 3 in their paper. The paper identifies a region of significant SNPs between chromosome 4 and chromosome 5 using a model that controls for relatedness using a kinship matrix. For illustration, the data set included in this vignette has the last 500 SNPs of chromosome 4, the first 500 SNPs of chromosome 5, as well as 500 additional SNPs randomly selected.
 
 ## Preprocessing Data
 
@@ -461,11 +461,11 @@ GA_results <- postGWAS(Y = log(Y),SNPs = SNPs,number_cores = 1,
 GA_results
 ```
 
-With 4 candidate SNPs, there are 2^4 - 1 = 15 possible models. The reason 15 models do not show up in the above output is because the output is limited to showing models only in top cumulative 95% of the posterior probability. Because the number of candidate SNPs is 4 (<= 12), the function `postGWAS` performs an exhaustive search and computes the posterior probabilities for all 7 possible models. In this example, models 2 through 8 have the exact same posterior probability. One way to interpret this result is that each of these three SNPs (801, 820, and 852) provide the same information. Another way of looking at this result is that having 1 SNP vs having all 3 of these SNPs in the model makes no difference. This may indicate high correlations amongst these 3 SNPs. 
+With 4 candidate SNPs, there are 2^4 - 1 = 15 possible models. The reason 15 models do not show up in the above output is because the output is limited to showing models only in top cumulative 95% of the posterior probability. Because the number of candidate SNPs is 4 (<= 12), the function `postGWAS` performs an exhaustive search and computes the posterior probabilities for all 15 possible models. In this example, models 2 through 8 have the exact same posterior probability. One way to interpret this result is that each of these three SNPs (801, 820, and 852) provide the same information. Another way of looking at this result is that having 1 SNP vs having all 3 of these SNPs in the model makes no difference. This may indicate high correlations amongst these 3 SNPs. 
 
-The genetic search algorithm shows us that the three SNPs provide the exact same information to the phenotype. That is why the genetic search model proposes 7 different models. It tells us that having 1 SNP vs having all 3 SNPs makes no difference, they provide the same information. In a lab setting these three SNPs should be looked at and since these SNPs are in the same region this region should be a high priority for further investigation.
+The Bayesian model search shows us that the three SNPs provide the exact same information to the phenotype. That is why the Bayesian model selection proposes 7 different models. It tells us that having 1 SNP vs having all 3 SNPs makes no difference, they provide the same information. In a lab setting these three SNPs should be looked at and since these SNPs are in the same region this region should be a high priority for further investigation.
 
-Lets investigate this further with a correlation plot.
+Let us investigate this further with a correlation plot.
 
 ```{r, fig.wide = TRUE,fig.align="center", fig.width=6.75, fig.height=4.75}
 cor_plot(SNPs = SNPs[,Significant_SNPs$Significant == 1],
@@ -473,24 +473,24 @@ cor_plot(SNPs = SNPs[,Significant_SNPs$Significant == 1],
   info = RealDataInfo[,Significant_SNPs$Significant == 1])
 ```
 
-Indeed the correlation plot indicates that all correlations between pairs of these 3 SNPs are equal to 1. To investigate the further the minor allele frequency of the 4 significant SNPs can be calculated with the following code:
+Indeed the correlation plot indicates that all correlations between pairs of the 3 most important SNPs are equal to 1. To investigate the further the minor allele frequency of the 4 significant SNPs can be calculated with the following code:
 
 ```{r}
 1 - colMeans(SNPs[,Significant_SNPs$Significant == 1])
 ```
 
-Three of the significant SNPs have the same minor allele frequency of 0.04268, matching the belief that these SNPs are identical. We can look at the number of SNPs in between the 4 SNPs to understand the area of the gene.
+Three of the significant SNPs have the same minor allele frequency of 0.04268 and correlation equal to 1 indicating that these SNPs are identical. We can look at the number of SNPs in between the 4 SNPs to understand the area of the gene.
 
 ```{r}
 which(Significant_SNPs$Significant == 1)
 ```
 
-There is 18 SNPs between the first two SNPs, 12 SNPs between the second and third SNPs, and 18 SNPs between the third and fourth SNPs, with the total number of SNPs being 52 for this region. These values are only looking at SNPs used in this analysis and not SNPs that were dropped due to low minor allele frequency. To get a more in depth picture the summary statistics for the minor allele frequency of these 52 SNPs is given below:
+There are 18 SNPs between the first two SNPs, 12 SNPs between the second and third SNPs, and 18 SNPs between the third and fourth SNPs, with the total number of SNPs being 52 for this region. These values are only looking at SNPs used in this analysis and not SNPs that were dropped due to low minor allele frequency. To get a more in-depth picture the summary statistics for the minor allele frequency of these 52 SNPs is given below:
 
 ```{r}
 summary(1 - colMeans(SNPs[,801:852]))
 ```
 
-There appears to be a high number of minor allele's for these 52 SNPs indicating this is a great location to further investigate in a lab setting.
+These summary statistics indicate that, located between the 4 significant SNPs found in the GWAS analysis, there are many SNPs with high allele variability. Hence, the fact that the 3 most significant SNPs have pairwise correlations equal to 1 and are separated by highly variable SNPs may indicate that the three most significant SNPs tend to co-mutate and thus may be associated with important biological functions. Thus, these three most significant SNPs seem to be very promising candidates for follow-up lab experiments.
 
 # References
