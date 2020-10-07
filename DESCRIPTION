@@ -1,7 +1,7 @@
 Package: GWAS.BAYES
 Type: Package
 Title: GWAS for Selfing Species
-Version: 0.99.1
+Version: 0.99.2
 Authors@R: 
   c(person(given = "Jake",
            family = "Williams",
@@ -13,7 +13,7 @@ Authors@R:
     person(given = "Tieming",
            family = "Ji",
            role = "aut"))
-Description: This package is built to perform GWAS analysis for selfing species in R. The research related to this package was supported in part by National Science Foundation Award 1853549.
+Description: This package is built to perform GWAS analysis for selfing species. The research related to this package was supported in part by National Science Foundation Award 1853549.
 License: GPL-2 | GPL-3
 Encoding: UTF-8
 LazyData: true
