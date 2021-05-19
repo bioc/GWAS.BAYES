@@ -1,7 +1,7 @@
 Package: GWAS.BAYES
 Type: Package
 Title: GWAS for Selfing Species
-Version: 1.1.0
+Version: 1.2.0
 Authors@R: 
   c(person(given = "Jake",
            family = "Williams",
