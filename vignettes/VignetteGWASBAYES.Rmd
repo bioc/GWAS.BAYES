@@ -435,8 +435,10 @@ If one would like to visualize the common Manhattan plots, the package `qqman` (
 
 ```{r, fig.wide = TRUE,fig.align="center", fig.width=6.75, fig.height=4.75,warning=FALSE,message=FALSE}
 library(qqman,quietly = TRUE) 
+Significant_SNPs <- cbind(Significant_SNPs,paste0("rs",1:nrow(Significant_SNPs)))
+colnames(Significant_SNPs) <- c(colnames(Significant_SNPs)[1:4],"SNPs")
 manhattan(Significant_SNPs,chr = "Chromosomes",bp = "Positions",
-  p = "P_values",suggestiveline = FALSE,
+  p = "P_values",snp = "SNPs",suggestiveline = FALSE,
   genomewideline = -log10(.05/nrow(Significant_SNPs)))
 ```
 
