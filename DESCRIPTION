@@ -1,7 +1,7 @@
 Package: GWAS.BAYES
 Type: Package
 Title: GWAS conducted with Bayesian Procedures 
-Version: 1.9.1
+Version: 1.8.1
 Authors@R: 
   c(person(given = "Jacob",
            family = "Williams",
