@@ -1,6 +1,6 @@
 ---
 title: "GWAS.BAYES"
-author: "Jacob Williams"
+author: "Jacob Williams and Marco A.R. Ferreira"
 date: "`r Sys.Date()`"
 output: 
     BiocStyle::html_document:
