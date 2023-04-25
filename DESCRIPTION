@@ -1,7 +1,7 @@
 Package: GWAS.BAYES
 Type: Package
 Title: Bayesian analysis of Gaussian GWAS data 
-Version: 1.9.5
+Version: 1.10.0
 Authors@R: 
   c(person(given = "Jacob",
            family = "Williams",
