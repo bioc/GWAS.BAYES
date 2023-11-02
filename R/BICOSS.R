@@ -791,9 +791,9 @@ P3D_pvalues <- function(y,X,kinship){
 
   one.tilde <- t(P) %*% rep(1,length(y))
 
-  REML.estimates <- REML_NullModel(x = one.tilde,y = y.tilde,d = D)
+  REML.estimates <- REML_estimation_1Dregressor(x = one.tilde,y = y.tilde,d = D)
   alpha <- REML.estimates$beta
-  kappa <- REML.estimates$t
+  kappa <- REML.estimates$kappa
 
   y.tilde <- y.tilde - one.tilde*alpha
 
@@ -806,7 +806,7 @@ P3D_pvalues <- function(y,X,kinship){
   var.beta.hat <- sigma.star2 / xj.t.xj
 
   t.statistic <- beta.hat / sqrt(var.beta.hat)
-  pvalues <- 2*stats::pnorm(abs(t.statistic), mean=0, sd=1, lower.tail=FALSE)
+  pvalues <- 2*stats::pt(abs(t.statistic), n - 2, lower.tail=FALSE)
   return(pvalues)
 }
 
@@ -825,7 +825,7 @@ NotP3D_pvalues <- function(y,X,kinship){
 
   one.tilde <- t(P) %*% rep(1,length(y))
 
-  REML.estimates <- REML_NullModel(x = one.tilde,y = y.tilde,d = D)
+  REML.estimates <- REML_estimation_1Dregressor(x = one.tilde,y = y.tilde,d = D)
   alpha <- REML.estimates$beta
 
   y.tilde <- y.tilde - one.tilde*alpha
@@ -863,7 +863,7 @@ NotP3D_pvalues <- function(y,X,kinship){
 
     var.beta.hat <- sigma.reml / xtx
     t.statistic <- beta.reml / sqrt(var.beta.hat)
-    pvalues <- 2*stats::pnorm(abs(t.statistic), mean=0, sd=1, lower.tail=FALSE)
+    pvalues <- 2*stats::pt(abs(t.statistic), n - p, lower.tail=FALSE)
 
     return(pvalues)
   }

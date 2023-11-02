@@ -1,0 +1,113 @@
+---
+title: "IEB in the GWAS.BAYES Package"
+author: "Jacob Williams and Marco A.R. Ferreira"
+date: "`r Sys.Date()`"
+output: 
+    BiocStyle::html_document:
+      toc: true
+bibliography: references.bib  
+geometry: margin=0.5cm
+vignette: >
+  %\VignetteIndexEntry{IEB}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  tidy = FALSE
+)
+```
+
+```{r, warning=FALSE,message=FALSE}
+library(GWAS.BAYES)
+```
+
+# Introduction
+
+The `GWAS.BAYES` package provides statistical tools for the analysis of Gaussian GWAS data. `GWAS.BAYES` contains functions to perform IEB which is a novel iterative two step Bayesian procedure that, when compared to single marker analysis (SMA), increases the recall of true causal SNPs and drastically reduces the rate of false discoveries. Further, when compared to BICOSS [@BICOSS] also available in `GWAS.BAYES`, IEB provides a quicker and more accurate analysis.
+
+This vignette shows an example of how to use the IEB function provided in `GWAS.BAYES` to analyze GWAS data. Data has been simulated under a linear mixed model from 9,000 SNPs for 328 _A. Thaliana_ ecotypes. The `GWAS.BAYES` package includes as `R` objects the 9,000 SNPs, the simulated phenotypes, and the kinship matrix used to simulate the data.
+
+# Functions
+
+The function implemented in `GWAS.BAYES` is described below:
+
+* `IEB` Performs IEB, using linear mixed models for a given numeric phenotype vector `Y`, a SNP matrix encoded numerically `SNPs`, and a realized relationship matrix or kinship matrix `kinship`. The `IEB` function returns the indices of the SNP matrix that were identified in the best model found by the IEB algorithm.
+
+# Model/Model Assumptions
+
+The model for GWAS analysis used in the `GWAS.BAYES` package is
+
+\begin{equation*}
+\textbf{Y} = X \boldsymbol{\beta} + Z \textbf{u} + \boldsymbol{\epsilon} \ \text{where} \ \boldsymbol{\epsilon} \sim N(\textbf{0},\sigma^2 I) \ \text{and} \ \textbf{u} \sim N(\textbf{0},\sigma^2 \tau K),
+\end{equation*}
+
+where
+
+* $\textbf{Y}$ is the vector of phenotype responses.
+* $X$ is the matrix of SNPs (single nucleotide polymorphisms).
+* $\boldsymbol{\beta}$ is the vector of regression coefficients that contains the effects of the SNPs.
+* $Z$ is an incidence matrix relating the random effects associated with the kinship structure.
+* $\textbf{u}$ is a vector of random effects associated with the kinship structure to the phenotype responses.
+* $\boldsymbol{\epsilon}$ is the error vector.
+* $\sigma^2$ is the variance of the errors.
+* $\tau$ is a parameter related to the variance of the random effects.
+* $K$ is the kinship matrix.
+
+Currently, all functions in `GWAS.BAYES` assume the errors of the fitted model are Gaussian. 
+
+# Example
+
+The `IEB` function requires a vector of observed phenotypes, a matrix of SNPs, and a kinship matrix. First, the vector of observed phenotypes must be a numeric vector or a numeric $n \times 1$ matrix. `GWAS.BAYES` does not allow the analysis of multiple phenotypes at the same time. In this example, the vector of observed phenotypes was simulated from a linear mixed model. Here are the first five elements of the simulated vector of phenotypes:
+
+```{r}
+Y[1:5]
+```
+
+Second, the SNP matrix has to contain numeric values where each column corresponds to a SNP of interest and the $i$th row corresponds to the $i$th observed phenotype. In this example, the SNPs are a subset of the TAIR9 genotype dataset and all SNPs have minor allele frequency greater than 0.01. Here are the first five rows and five columns of the SNP matrix:
+
+```{r}
+SNPs[1:5,1:5]
+```
+
+Third, the kinship matrix is an $n \times n$ positive semi-definite matrix containing only numeric values. The $i$th row or $i$th column quantifies how observation $i$ is related to other observations. Here are the first five rows and five columns of the kinship matrix:
+
+```{r}
+kinship[1:5,1:5]
+```
+
+## IEB
+
+The function `IEB` implements the IEB method for linear mixed models with Gaussian errors. This function takes as inputs the observed phenotypes, the SNPs coded numerically, and the kinship matrix. Further, the other inputs of `IEB` are the FDR nominal level, the maximum number of iterations of the genetic algorithm in the model selection step, and the number of consecutive iterations of the genetic algorithm with the same best model for convergence. The default values of maximum iterations and the number of iterations are the values used in the IEB manuscript [@IEB], that is, 400 and 40 respectively.
+
+Here we illustrate the use of IEB with a nominal FDR of 0.05. 
+
+```{r}
+IEB_Result <- IEB(Y = Y, SNPs = SNPs, 
+                     kinship = kinship,FDR_Nominal = 0.05,
+                     maxiterations = 400,runs_til_stop = 40)
+IEB_Result$best_model
+```
+
+IEB returns a named list where the best model values correspond to the indices of the SNP matrix. Because this is simulated data, we can compute the number of true positives and the number of false positives.
+
+```{r}
+## The true causal SNPs in this example are
+True_Causal_SNPs <- c(450,1350,2250,3150,4050,4950,5850,6750,7650,8550)
+## Thus, the number of true positives is
+sum(IEB_Result$best_model %in% True_Causal_SNPs)
+## The number of false positives is
+sum(!(IEB_Result$best_model %in% True_Causal_SNPs))
+```
+
+IEB, when compared to SMA, better controls false discoveries and improves on the number of true positives. When compared to BICOSS, IEB is much quicker the BICOSS while maintaining or even increasing precision and recall of causal SNPs.
+
+```{r}
+sessionInfo()
+```
+
+
+# References

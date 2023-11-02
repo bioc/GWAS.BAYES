@@ -1,5 +1,5 @@
 ---
-title: "GWAS.BAYES"
+title: "BICOSS in the GWAS.BAYES Package"
 author: "Jacob Williams and Marco A.R. Ferreira"
 date: "`r Sys.Date()`"
 output: 
@@ -8,7 +8,7 @@ output:
 bibliography: references.bib  
 geometry: margin=0.5cm
 vignette: >
-  %\VignetteIndexEntry{GWAS.BAYES}
+  %\VignetteIndexEntry{BICOSS}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -35,19 +35,19 @@ This vignette shows an example of how to use the BICOSS function provided in `GW
 
 The function implemented in `GWAS.BAYES` is described below:
 
-* `BICOSS` Performs BICOSS, as proposed by @BICOSS, using linear mixed models for a given numeric phenotype vector `y`, a SNP matrix encoded numerically `SNPs`, and a realized relationship matrix or kinship matrix `kinship`. The `BICOSS` function returns the indices of the SNP matrix that were identified in the best model found by the BICOSS algorithm.
+* `BICOSS` Performs BICOSS, as proposed by @BICOSS, using linear mixed models for a given numeric phenotype vector `Y`, a SNP matrix encoded numerically `SNPs`, and a realized relationship matrix or kinship matrix `kinship`. The `BICOSS` function returns the indices of the SNP matrix that were identified in the best model found by the BICOSS algorithm.
 
 # Model/Model Assumptions
 
 The model for GWAS analysis used in the `GWAS.BAYES` package is
 
 \begin{equation*}
-\textbf{y} = X \boldsymbol{\beta} + Z \textbf{u} + \boldsymbol{\epsilon} \ \text{where} \ \boldsymbol{\epsilon} \sim N(\textbf{0},\sigma^2 I) \ \text{and} \ \textbf{u} \sim N(\textbf{0},\sigma^2 \tau K),
+\textbf{Y} = X \boldsymbol{\beta} + Z \textbf{u} + \boldsymbol{\epsilon} \ \text{where} \ \boldsymbol{\epsilon} \sim N(\textbf{0},\sigma^2 I) \ \text{and} \ \textbf{u} \sim N(\textbf{0},\sigma^2 \tau K),
 \end{equation*}
 
 where
 
-* $\textbf{y}$ is the vector of phenotype responses.
+* $\textbf{Y}$ is the vector of phenotype responses.
 * $X$ is the matrix of SNPs (single nucleotide polymorphisms).
 * $\boldsymbol{\beta}$ is the vector of regression coefficients that contains the effects of the SNPs.
 * $Z$ is an incidence matrix relating the random effects associated with the kinship structure.
