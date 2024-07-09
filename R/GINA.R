@@ -399,8 +399,8 @@ unit_oneiter <- function(y,X,P,D,FDR.threshold = 0.95,maxiterations = 1000, runs
   }
 }
 
-#' @title  IEB for Gaussian Phenotypes
-#' @description  Performs IEB
+#' @title  GINA for Gaussian Phenotypes
+#' @description  Performs GINA
 #' @param Y The observed numeric phenotypes
 #' @param SNPs The SNP matrix, where each column represents a single SNP encoded as the numeric coding 0, 1, 2. This is entered as a matrix object.
 #' @param FDR_Nominal The nominal false discovery rate for which SNPs are selected from in the screening step.
@@ -413,11 +413,11 @@ unit_oneiter <- function(y,X,P,D,FDR.threshold = 0.95,maxiterations = 1000, runs
 #' @return The column indices of SNPs that were in the best model identified by BICOSS.
 #' @examples
 #' library(GWAS.BAYES)
-#' IEB(Y = Y, SNPs = SNPs, kinship = kinship,
+#' GINA(Y = Y, SNPs = SNPs, kinship = kinship,
 #'     FDR_Nominal = 0.05,
 #'     maxiterations = 400,runs_til_stop = 40)
 #' @export
-IEB <- function(Y,SNPs,kinship,FDR_Nominal = 0.05,maxiterations = 400,runs_til_stop = 40){
+GINA <- function(Y,SNPs,kinship,FDR_Nominal = 0.05,maxiterations = 400,runs_til_stop = 40){
 
   if(FDR_Nominal > 1 | FDR_Nominal < 0){
     stop("FDR_Nominal has to be between 0 and 1")

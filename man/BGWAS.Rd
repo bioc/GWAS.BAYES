@@ -2,7 +2,7 @@
 % Please edit documentation in R/BGWAS.R
 \name{BGWAS}
 \alias{BGWAS}
-\title{Performs BGWAS analysis as in the BGWAS manuscript.}
+\title{Performs BGWAS analysis as in the BGWAS manuscript (Williams, J., Xu, S. and Ferreira, M.A., 2023. BGWAS: Bayesian variable selection in linear mixed models with nonlocal priors for genome-wide association studies. BMC Bioinformatics, 24(1), pp.1-20.).}
 \usage{
 BGWAS(
   Y,
@@ -36,7 +36,7 @@ Defaulted at 40 which is the value used in the BICOSS paper simulation studies.}
 A named list that includes the output from the screening step and the output from the model selection step. The model proposed by the BGWAS method is the output of the model selection step.
 }
 \description{
-Performs BGWAS analysis as in the BGWAS manuscript.
+Performs BGWAS analysis as in the BGWAS manuscript (Williams, J., Xu, S. and Ferreira, M.A., 2023. BGWAS: Bayesian variable selection in linear mixed models with nonlocal priors for genome-wide association studies. BMC Bioinformatics, 24(1), pp.1-20.).
 }
 \examples{
 library(GWAS.BAYES)

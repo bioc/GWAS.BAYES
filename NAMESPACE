@@ -2,4 +2,4 @@
 
 export(BGWAS)
 export(BICOSS)
-export(IEB)
+export(GINA)
