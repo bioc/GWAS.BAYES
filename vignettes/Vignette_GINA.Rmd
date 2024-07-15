@@ -1,6 +1,6 @@
 ---
 title: "GINA in the GWAS.BAYES Package"
-author: "Jacob Williams and Marco A.R. Ferreira"
+author: "Jacob Williams, Shuangshuang Xu, and Marco A.R. Ferreira"
 date: "`r Sys.Date()`"
 output: 
     BiocStyle::html_document:
